@@ -273,9 +273,9 @@ class GranthaSetup {
             {"id": "learn_slokas_anchor", "text":"श्लोकाः" },
             {"id": "learn_prasnottarani_anchor", "text":"प्रश्नोत्तराणि" },
             {"id": "sloka-include-anvayam-label", "text": "सान्वयम्"},
-            {"id": "sloka-include-meaning-label", "text": "सार्धम्"},
+            {"id": "sloka-include-meaning-label", "text": "सार्थम्"},
             {"id": "sloka-repitition-label", "text": "अनूच्चारणम्"},
-            {"id": "practice-assisted-test-anchor", "text": "मौकिकाभ्यासः"}
+            {"id": "practice-assisted-test-anchor", "text": "मौखिकाभ्यासः"}
             
         ];
 
