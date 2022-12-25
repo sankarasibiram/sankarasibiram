@@ -1,0 +1,12 @@
+{
+    "granthas": [
+        {"name": "प्रश्नोत्तररत्नमालिका", "file_location":"data/prasna/prasna.json"},
+        {"name": "शिवानन्दलहरी", "file_location":"data/sivanandalahari/sivanandalahari.json"}
+    ],
+    "lipi": [
+        {"name":"devanagari","display":"देवनागरी"},
+        {"name":"telugu","display":"తెలుగు"},
+        {"name":"kannada","display":"ಕನ್ನಡ"},
+        {"name":"iast","display":"IAST"}
+    ]
+}

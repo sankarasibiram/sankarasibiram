@@ -1,0 +1,36 @@
+{
+    "grantha":"प्रश्नोत्तररत्नमालिका",
+    "grantha_kartha": "श्री शङ्कराचार्यः",
+    "grantha_type": "prasnottara",
+    "error": "Meaning unavailable.",
+    "slokas": [
+        {
+            "sloka_number": 1,
+            "sloka": [
+                "Who, committed to success in visible and invisible fruits, is not adorned by memorizing praśnottararatnamālikā?"
+            ]
+        },
+        {
+            "sloka_number": 2,
+            "sloka": [
+                "1. What must be obtained (accepted)? guru's instructions.",
+                "2. What must be given up? Forbidden action; Action that should not be done",
+                "3. Who is guru? One who has realized the tattva (everlasting and unchanging truth),  Who is ever acting in śiṣya's interests."
+            ]
+        },
+        {
+            "sloka_number": 3,
+            "sloka": [
+                "4. What must be expedited by the wise? End the cycle of saṃsāra (birth and death)",
+                "5. What is the seed for the tree called mokṣa (release from saṃsāra)? Knowledge obtained by performing prescribed actions and duties."
+            ]
+        },
+        {
+            "sloka_number": 4,
+            "sloka": [
+                "6. What is most beneficial?  dharmaḥ.",
+                "7. Who is pure? One whose mind is clean."
+            ]
+        }                       
+    ]
+}

@@ -1,0 +1,1094 @@
+[
+    {
+        "sloka_number": "2",
+        "question_number": 1,
+        "prasna": "किमुपादेयम्",
+        "utharam": "गुरुवचनम्"
+    },
+    {
+        "sloka_number": "2",
+        "question_number": 2,
+        "prasna": "हेयमपि किम् ",
+        "utharam": "अकार्यम्"
+    },
+    {
+        "sloka_number": "2",
+        "question_number": 3,
+        "prasna": "को गुरुः",
+        "utharam": "अधिगततत्त्वः शिष्यहितायोद्यतः सततम्"
+    },
+    {
+        "sloka_number": "3",
+        "question_number": 4,
+        "prasna": "त्वरितं किं कर्तव्यं विदुषाम्",
+        "utharam": "संसारसन्ततिच्छेदः"
+    },
+    {
+        "sloka_number": "3",
+        "question_number": 5,
+        "prasna": "किं मोक्षतरोर्बीजम्",
+        "utharam": "सम्यक्ज्ञानं क्रियासिद्धम्"
+    },
+    {
+        "sloka_number": "4",
+        "question_number": 6,
+        "prasna": "कः पथ्यतरः",
+        "utharam": "धर्मः"
+    },
+    {
+        "sloka_number": "4",
+        "question_number": 7,
+        "prasna": "कः शुचिरिह",
+        "utharam": "यस्य मानसं शुद्धम्"
+    },
+    {
+        "sloka_number": "4",
+        "question_number": 8,
+        "prasna": "कः पण्डितः",
+        "utharam": "विवेकी"
+    },
+    {
+        "sloka_number": "4",
+        "question_number": 9,
+        "prasna": "किं विषम्",
+        "utharam": "अवधीरणा गुरुषु"
+    },
+    {
+        "sloka_number": "5",
+        "question_number": 10,
+        "prasna": "किं संसारे सारम्",
+        "utharam": "बहुशोऽपि विचिन्त्यमानमिदमेव"
+    },
+    {
+        "sloka_number": "5",
+        "question_number": 11,
+        "prasna": "किं मनुजेष्विष्टतमम्",
+        "utharam": "स्वपरहितायोद्यतं जन्म"
+    },
+    {
+        "sloka_number": "6",
+        "question_number": 12,
+        "prasna": "मदिरेव मोहजनकः कः",
+        "utharam": "स्नेहः"
+    },
+    {
+        "sloka_number": "6",
+        "question_number": 13,
+        "prasna": "के च दस्यवः",
+        "utharam": "विषयाः"
+    },
+    {
+        "sloka_number": "6",
+        "question_number": 14,
+        "prasna": "का भववल्ली",
+        "utharam": "तृष्णा"
+    },
+    {
+        "sloka_number": "6",
+        "question_number": 15,
+        "prasna": "को वैरी",
+        "utharam": "यस्त्वनुद्योगः"
+    },
+    {
+        "sloka_number": "7",
+        "question_number": 16,
+        "prasna": "कस्माद्भयमिह",
+        "utharam": "मरणात्"
+    },
+    {
+        "sloka_number": "7",
+        "question_number": 17,
+        "prasna": "अन्धादिह को विशिष्यते",
+        "utharam": "रागी"
+    },
+    {
+        "sloka_number": "7",
+        "question_number": 18,
+        "prasna": "कः शूरः",
+        "utharam": "यो ललनालोचनबाणैर्न च व्यधितः"
+    },
+    {
+        "sloka_number": "8",
+        "question_number": 19,
+        "prasna": "पातुं कर्णाञ्जलिभिः किममृतमिह युज्यते",
+        "utharam": "सदुपदेशः"
+    },
+    {
+        "sloka_number": "8",
+        "question_number": 20,
+        "prasna": "किं गुरुताया मूलम्",
+        "utharam": "यदेतदप्रार्थनं नाम"
+    },
+    {
+        "sloka_number": "9",
+        "question_number": 21,
+        "prasna": "किं गहनम्",
+        "utharam": "स्त्रीचरितम्"
+    },
+    {
+        "sloka_number": "9",
+        "question_number": 22,
+        "prasna": "कश्चतुरः",
+        "utharam": "यो न खण्डितस्तेन"
+    },
+    {
+        "sloka_number": "9",
+        "question_number": 23,
+        "prasna": "किं दुःखम्",
+        "utharam": "अ​सन्तोषः"
+    },
+    {
+        "sloka_number": "9",
+        "question_number": 24,
+        "prasna": "किं लाघवम्",
+        "utharam": "अधमतो याच्ञा"
+    },
+    {
+        "sloka_number": "10",
+        "question_number": 25,
+        "prasna": "किं जीवितम्",
+        "utharam": "अनवद्यम्"
+    },
+    {
+        "sloka_number": "10",
+        "question_number": 26,
+        "prasna": "किं जाड्यम्",
+        "utharam": "पाठतोऽप्यनभ्यासः"
+    },
+    {
+        "sloka_number": "10",
+        "question_number": 27,
+        "prasna": "को जागर्ति",
+        "utharam": "विवेकी"
+    },
+    {
+        "sloka_number": "10",
+        "question_number": 28,
+        "prasna": "का निद्रा",
+        "utharam": "मूढता जन्तोः"
+    },
+    {
+        "sloka_number": "11",
+        "question_number": 29,
+        "prasna": "नलिनीदलगतजलवत्तरलं किम्",
+        "utharam": "यौवनं धनं चायुः"
+    },
+    {
+        "sloka_number": "11",
+        "question_number": 30,
+        "prasna": "कथय पुनः के शशिनः किरणसमाः",
+        "utharam": "सज्जना एव"
+    },
+    {
+        "sloka_number": "12",
+        "question_number": 31,
+        "prasna": "को नरकः",
+        "utharam": "परवशता"
+    },
+    {
+        "sloka_number": "12",
+        "question_number": 32,
+        "prasna": "किं सौख्यम्",
+        "utharam": "सर्वसङ्गविरतिर्या"
+    },
+    {
+        "sloka_number": "12",
+        "question_number": 33,
+        "prasna": "किं साध्यम्",
+        "utharam": "भूतहितम्"
+    },
+    {
+        "sloka_number": "12",
+        "question_number": 34,
+        "prasna": "प्रियं च किं प्राणिनाम्",
+        "utharam": "असवः"
+    },
+    {
+        "sloka_number": "13",
+        "question_number": 35,
+        "prasna": "कोऽनर्थफलः",
+        "utharam": "मानः"
+    },
+    {
+        "sloka_number": "13",
+        "question_number": 36,
+        "prasna": "का सुखदा",
+        "utharam": "साधुजनमैत्री"
+    },
+    {
+        "sloka_number": "13",
+        "question_number": 37,
+        "prasna": "सर्वव्यसनविनाशे को दक्षः",
+        "utharam": "सर्वथा त्यागी"
+    },
+    {
+        "sloka_number": "14",
+        "question_number": 38,
+        "prasna": "किं मरणम्",
+        "utharam": "मूर्खत्वं"
+    },
+    {
+        "sloka_number": "14",
+        "question_number": 39,
+        "prasna": "किं चानर्घम्",
+        "utharam": "यदवसरे दत्तम्"
+    },
+    {
+        "sloka_number": "14",
+        "question_number": 40,
+        "prasna": "आमरणात् किं शल्यम्",
+        "utharam": "प्रच्छन्नं यत्कृतं पापम्"
+    },
+    {
+        "sloka_number": "15",
+        "question_number": 41,
+        "prasna": "कुत्र विधेयो यत्नः",
+        "utharam": "विद्याभ्यासे सदौषधे दाने"
+    },
+    {
+        "sloka_number": "15",
+        "question_number": 42,
+        "prasna": "अवधीरणा क्व कार्या",
+        "utharam": "खलपरयोषित्परधनेषु"
+    },
+    {
+        "sloka_number": "16",
+        "question_number": 43,
+        "prasna": "काहर्निशमनुचिन्त्या",
+        "utharam": "संसारासारता न तु प्रमदा"
+    },
+    {
+        "sloka_number": "16",
+        "question_number": 44,
+        "prasna": "का प्रेयसी विधेया",
+        "utharam": "करुणा दीनेषु सज्जने मैत्री"
+    },
+    {
+        "sloka_number": "17",
+        "question_number": 45,
+        "prasna": "कण्ठगतैरप्यसुभिः कस्य ह्यात्मा न शक्यते जेतुम्",
+        "utharam": "मूर्खस्य शङ्कितस्य च विषादिनो वा कृतघ्नस्य"
+    },
+    {
+        "sloka_number": "18",
+        "question_number": 46,
+        "prasna": "कः साधुः",
+        "utharam": "सद्वृत्तः"
+    },
+    {
+        "sloka_number": "18",
+        "question_number": 47,
+        "prasna": "कमधममाचक्षते",
+        "utharam": "असद्वृत्तम्"
+    },
+    {
+        "sloka_number": "18",
+        "question_number": 48,
+        "prasna": "केन जितं जगदेतत्",
+        "utharam": "सत्यतितिक्षावता पुंसा"
+    },
+    {
+        "sloka_number": "19",
+        "question_number": 49,
+        "prasna": "कस्मै नमांसि देवाः कुर्वन्ति",
+        "utharam": "दयाप्रधानाय"
+    },
+    {
+        "sloka_number": "19",
+        "question_number": 50,
+        "prasna": "कस्मादुद्वेगः स्यात् सुधियः",
+        "utharam": "संसारारण्यतः"
+    },
+    {
+        "sloka_number": "20",
+        "question_number": 51,
+        "prasna": "कस्य वशे प्राणिगणः",
+        "utharam": "सत्यप्रियभाषिणो विनीतस्य"
+    },
+    {
+        "sloka_number": "20",
+        "question_number": 52,
+        "prasna": "क्व स्थातव्यम्",
+        "utharam": "न्याय्ये पथि दृष्टादृष्टलाभाढ्ये"
+    },
+    {
+        "sloka_number": "21",
+        "question_number": 53,
+        "prasna": "कोऽन्धः",
+        "utharam": "योऽकार्यरतः"
+    },
+    {
+        "sloka_number": "21",
+        "question_number": 54,
+        "prasna": "को बधिरः",
+        "utharam": "यो हितानि न श्रुणोति"
+    },
+    {
+        "sloka_number": "21",
+        "question_number": 55,
+        "prasna": "को मूकः",
+        "utharam": "यः काले प्रियाणि वक्तुं न जानाति"
+    },
+    {
+        "sloka_number": "22",
+        "question_number": 56,
+        "prasna": "किं दानम्",
+        "utharam": "अनाकाङ्क्षम्"
+    },
+    {
+        "sloka_number": "22",
+        "question_number": 57,
+        "prasna": "किं मित्रम्",
+        "utharam": "यो निवारयति पापात्"
+    },
+    {
+        "sloka_number": "22",
+        "question_number": 58,
+        "prasna": "कोऽलङ्कारः",
+        "utharam": "शीलम्"
+    },
+    {
+        "sloka_number": "22",
+        "question_number": 59,
+        "prasna": "किं वाचां मण्डनम्",
+        "utharam": "सत्यम्"
+    },
+    {
+        "sloka_number": "23",
+        "question_number": 60,
+        "prasna": "विद्युद्विलसितचपलं किम्",
+        "utharam": "दुर्जनसङ्गतिर्युवतयश्च"
+    },
+    {
+        "sloka_number": "23",
+        "question_number": 61,
+        "prasna": "कुलशीलनिष्प्रकम्पाः के कलिकालेऽपि",
+        "utharam": "सज्जना एव"
+    },
+    {
+        "sloka_number": "24",
+        "question_number": 62,
+        "prasna": "चिन्तामणिरिव दुर्लभमिह किम्",
+        "utharam": "कथयामि तच्चतुर्भद्रम्"
+    },
+    {
+        "sloka_number": "24-25",
+        "question_number": 63,
+        "prasna": "किं तद्वदन्ति भूयो विधुततमसो विशेषेण",
+        "utharam": "दानं प्रियवाक्सहितं ज्ञानमगर्वं क्षमान्वितं शौर्यम् वित्तं त्यागसमेतं दुर्लभमेतच्चतुर्भद्रम्"
+    },
+    {
+        "sloka_number": "26",
+        "question_number": 64,
+        "prasna": "किं शोच्यं",
+        "utharam": "कार्पण्यं सति विभवे"
+    },
+    {
+        "sloka_number": "26",
+        "question_number": 65,
+        "prasna": "किं प्रशस्तम्",
+        "utharam": "औदार्यम्"
+    },
+    {
+        "sloka_number": "26",
+        "question_number": 66,
+        "prasna": "कः पूज्यो विद्वद्भिः",
+        "utharam": "स्वभावतः सर्वदा विनीतो यः"
+    },
+    {
+        "sloka_number": "27",
+        "question_number": 67,
+        "prasna": "कः कुलकमलदिनेशः",
+        "utharam": "सति गुणविभवेऽपि यो नम्रः"
+    },
+    {
+        "sloka_number": "27",
+        "question_number": 68,
+        "prasna": "कस्य वशे जगदेतत्",
+        "utharam": "प्रियहितवचनस्य धर्मनिरतस्य"
+    },
+    {
+        "sloka_number": "28",
+        "question_number": 69,
+        "prasna": "विद्वन्मनोहरा का",
+        "utharam": "सत्कविता बोधवनिता च"
+    },
+    {
+        "sloka_number": "28",
+        "question_number": 70,
+        "prasna": "कं न स्पृशति विपत्तिः",
+        "utharam": "प्रवृद्धवचनानुवर्तिनं दान्तम्"
+    },
+    {
+        "sloka_number": "29",
+        "question_number": 71,
+        "prasna": "कस्मै स्पृहयति कमला",
+        "utharam": "अनलसचित्ताय नीतिवृत्ताय"
+    },
+    {
+        "sloka_number": "29",
+        "question_number": 72,
+        "prasna": "त्यजति च कं सहसा",
+        "utharam": "द्विजगुरुसुरनिन्दाकरं च सालस्यम्"
+    },
+    {
+        "sloka_number": "30",
+        "question_number": 73,
+        "prasna": "कुत्र विधेयो वासः",
+        "utharam": "सज्जननिकटेऽथवा काश्याम्"
+    },
+    {
+        "sloka_number": "30",
+        "question_number": 74,
+        "prasna": "कः परिहार्यो देशः",
+        "utharam": "पिशुनयुतो लुब्धभूपश्च"
+    },
+    {
+        "sloka_number": "31",
+        "question_number": 75,
+        "prasna": "केनाशोच्यः पुरुषः",
+        "utharam": "प्रणतकलत्रेण धीरविभवेन"
+    },
+    {
+        "sloka_number": "31",
+        "question_number": 76,
+        "prasna": "इह भुवने कः शोच्यः",
+        "utharam": "सत्यपि विभवे न यो दाता"
+    },
+    {
+        "sloka_number": "32",
+        "question_number": 77,
+        "prasna": "किं लघुताया मूलम्",
+        "utharam": "प्राकृतपुरुषेषु या याच्ञा"
+    },
+    {
+        "sloka_number": "32",
+        "question_number": 78,
+        "prasna": "रामादपि कः शूरः",
+        "utharam": "स्मरशरनिहतो न यश्चलति"
+    },
+    {
+        "sloka_number": "33",
+        "question_number": 79,
+        "prasna": "किमहर्निशमनुचिन्त्यम्",
+        "utharam": "भगवच्चरणं न संसारः"
+    },
+    {
+        "sloka_number": "33",
+        "question_number": 80,
+        "prasna": "चक्षुष्मन्तोऽप्यन्धाः के स्युः",
+        "utharam": "ये नास्तिका मनुजाः"
+    },
+    {
+        "sloka_number": "34",
+        "question_number": 81,
+        "prasna": "कः पङ्गुरिह",
+        "utharam": "प्रथितो व्रजति च यो वार्द्धके तीर्थम्"
+    },
+    {
+        "sloka_number": "34",
+        "question_number": 82,
+        "prasna": "किं तीर्थमपि च",
+        "utharam": "मुख्यं चित्तमलं यन्निवर्तयति"
+    },
+    {
+        "sloka_number": "35",
+        "question_number": 83,
+        "prasna": "किं स्मर्त्तव्यं पुरुषैः",
+        "utharam": "हरिनाम सदा न यावनी भाषा"
+    },
+    {
+        "sloka_number": "35",
+        "question_number": 84,
+        "prasna": "को हि न वाच्यः सुधिया ",
+        "utharam": "परदोषश्चानृतं तद्वत्"
+    },
+    {
+        "sloka_number": "36",
+        "question_number": 85,
+        "prasna": "किं सम्पाद्यं मनुजैः",
+        "utharam": "विद्या वित्तं बलं यशः पुण्यम्"
+    },
+    {
+        "sloka_number": "36",
+        "question_number": 86,
+        "prasna": "कः सर्वगुणविनाशी",
+        "utharam": "लोभः"
+    },
+    {
+        "sloka_number": "36",
+        "question_number": 87,
+        "prasna": "शत्रुश्च कः",
+        "utharam": "कामः"
+    },
+    {
+        "sloka_number": "37",
+        "question_number": 88,
+        "prasna": "का च सभा परिहार्या",
+        "utharam": "हीना या वृद्धसचिवेन"
+    },
+    {
+        "sloka_number": "37",
+        "question_number": 89,
+        "prasna": "इह कुत्रावहितः स्यान्मनुजः",
+        "utharam": "किल राजसेवायाम्"
+    },
+    {
+        "sloka_number": "38",
+        "question_number": 90,
+        "prasna": "प्राणादपि को रम्यः",
+        "utharam": "कुलधर्मः साधुसङ्गश्च"
+    },
+    {
+        "sloka_number": "38",
+        "question_number": 91,
+        "prasna": "का संरक्ष्या",
+        "utharam": "कीर्तिः पतिव्रता नैजबुद्धिश्च"
+    },
+    {
+        "sloka_number": "39",
+        "question_number": 92,
+        "prasna": "का कल्पलता लोके",
+        "utharam": "सच्छिष्यायार्पिता विद्या"
+    },
+    {
+        "sloka_number": "39",
+        "question_number": 93,
+        "prasna": "कोऽक्षयवटवृक्षः स्यात्",
+        "utharam": "विधिवत्सत्पात्रदत्तदानं यत्"
+    },
+    {
+        "sloka_number": "40",
+        "question_number": 94,
+        "prasna": "किं शास्त्रम्",
+        "utharam": "सर्वेषां युक्तिः"
+    },
+    {
+        "sloka_number": "40",
+        "question_number": 95,
+        "prasna": "माता च का",
+        "utharam": "धेनुः"
+    },
+    {
+        "sloka_number": "40",
+        "question_number": 96,
+        "prasna": "किं नु बलम्",
+        "utharam": "यद्धैर्र्यम्"
+    },
+    {
+        "sloka_number": "40",
+        "question_number": 97,
+        "prasna": "को मृत्युः",
+        "utharam": "यदवधानरहितत्वम्"
+    },
+    {
+        "sloka_number": "41",
+        "question_number": 98,
+        "prasna": "कुत्र विषम्",
+        "utharam": "दुष्टजने"
+    },
+    {
+        "sloka_number": "41",
+        "question_number": 99,
+        "prasna": "किमिहाशौचं भवेत् ",
+        "utharam": "ऋणं नृणाम्"
+    },
+    {
+        "sloka_number": "41",
+        "question_number": 100,
+        "prasna": "किमभयमिह",
+        "utharam": "वैराग्यम्"
+    },
+    {
+        "sloka_number": "41",
+        "question_number": 101,
+        "prasna": "भयमपि किम्",
+        "utharam": "वित्तमेव सर्वेषाम्"
+    },
+    {
+        "sloka_number": "42",
+        "question_number": 102,
+        "prasna": "का दुर्लभा नराणां",
+        "utharam": "हरिभक्तिः"
+    },
+    {
+        "sloka_number": "42",
+        "question_number": 103,
+        "prasna": "पातकं च किम्",
+        "utharam": "हिंसा"
+    },
+    {
+        "sloka_number": "42",
+        "question_number": 104,
+        "prasna": "को हि भगवत्प्रियः स्यात्",
+        "utharam": "योऽन्यं नोद्वेजयेदनुद्विग्नः"
+    },
+    {
+        "sloka_number": "43",
+        "question_number": 105,
+        "prasna": "कस्मात् सिद्धिः",
+        "utharam": "तपसः"
+    },
+    {
+        "sloka_number": "43",
+        "question_number": 106,
+        "prasna": "बुद्धिः क्व नु",
+        "utharam": "भूसुरे"
+    },
+    {
+        "sloka_number": "43",
+        "question_number": 107,
+        "prasna": "कुतो बुद्धिः",
+        "utharam": "वृद्धोपसेवया"
+    },
+    {
+        "sloka_number": "43",
+        "question_number": 108,
+        "prasna": "के वृद्धाः",
+        "utharam": "ये धर्मतत्त्वज्ञाः"
+    },
+    {
+        "sloka_number": "44",
+        "question_number": 109,
+        "prasna": "सम्भावितस्य मरणादधिकं किम्",
+        "utharam": "दुर्यशो भवति"
+    },
+    {
+        "sloka_number": "44",
+        "question_number": 110,
+        "prasna": "लोके सुखी भवेत्कः",
+        "utharam": "धनवान्"
+    },
+    {
+        "sloka_number": "44",
+        "question_number": 111,
+        "prasna": "धनमपि च किम्",
+        "utharam": "यतश्चेष्टम्"
+    },
+    {
+        "sloka_number": "45",
+        "question_number": 112,
+        "prasna": "सर्वसुखानां बीजं किम्",
+        "utharam": "पुण्यं"
+    },
+    {
+        "sloka_number": "45",
+        "question_number": 113,
+        "prasna": "दुःखमपि कुतः",
+        "utharam": "पापात्"
+    },
+    {
+        "sloka_number": "45",
+        "question_number": 114,
+        "prasna": "कस्यैश्वर्यम्",
+        "utharam": "यः किल शङ्करमाराधयेद्भक्त्या"
+    },
+    {
+        "sloka_number": "46",
+        "question_number": 115,
+        "prasna": "को वर्द्धते",
+        "utharam": "विनीतः"
+    },
+    {
+        "sloka_number": "46",
+        "question_number": 116,
+        "prasna": "को वा हीयेत",
+        "utharam": "यो दृप्तः"
+    },
+    {
+        "sloka_number": "46",
+        "question_number": 117,
+        "prasna": "को न प्रत्येतव्यः",
+        "utharam": "ब्रूते यश्चानृतं शश्वत्"
+    },
+    {
+        "sloka_number": "47",
+        "question_number": 118,
+        "prasna": "कुत्रानृतेऽप्यपापम्",
+        "utharam": "यच्चोक्तं धर्मरक्षार्थम्"
+    },
+    {
+        "sloka_number": "47",
+        "question_number": 119,
+        "prasna": "को धर्मः",
+        "utharam": "अभिमतो यः शिष्टानां निजकुलीनानाम्"
+    },
+    {
+        "sloka_number": "48",
+        "question_number": 120,
+        "prasna": "साधुबलं किम्",
+        "utharam": "दैवम्"
+    },
+    {
+        "sloka_number": "48",
+        "question_number": 121,
+        "prasna": "कः साधुः",
+        "utharam": "सर्वदा तुष्टः"
+    },
+    {
+        "sloka_number": "48",
+        "question_number": 122,
+        "prasna": "दैवं किं",
+        "utharam": "यत्सुकृतं"
+    },
+    {
+        "sloka_number": "48",
+        "question_number": 123,
+        "prasna": "कः सुकृती",
+        "utharam": "श्लाघ्यते च यः सद्भिः"
+    },
+    {
+        "sloka_number": "49",
+        "question_number": 124,
+        "prasna": "गृहमेधिनश्च मित्रं किं",
+        "utharam": "भार्या"
+    },
+    {
+        "sloka_number": "49",
+        "question_number": 125,
+        "prasna": "को गृही च",
+        "utharam": "यो यजते"
+    },
+    {
+        "sloka_number": "49",
+        "question_number": 126,
+        "prasna": "को यज्ञः",
+        "utharam": "यः श्रुत्या विहितः श्रेयस्करो नृणाम्"
+    },
+    {
+        "sloka_number": "50",
+        "question_number": 127,
+        "prasna": "कस्य क्रिया हि सफला",
+        "utharam": "यः पुनराचारवान् शिष्टः"
+    },
+    {
+        "sloka_number": "50",
+        "question_number": 128,
+        "prasna": "कः शिष्टः",
+        "utharam": "यो वेदप्रमाणवान्"
+    },
+    {
+        "sloka_number": "50",
+        "question_number": 129,
+        "prasna": "को हतः",
+        "utharam": "क्रियाभ्रष्टः"
+    },
+    {
+        "sloka_number": "51",
+        "question_number": 130,
+        "prasna": "को धन्यः",
+        "utharam": "संन्यासी"
+    },
+    {
+        "sloka_number": "51",
+        "question_number": 131,
+        "prasna": "को मान्यः",
+        "utharam": "पण्डितः साधुः"
+    },
+    {
+        "sloka_number": "51",
+        "question_number": 132,
+        "prasna": "कः सेव्यः",
+        "utharam": "यो दाता"
+    },
+    {
+        "sloka_number": "51",
+        "question_number": 133,
+        "prasna": "को दाता",
+        "utharam": "योऽर्थितृप्तिमातनुते"
+    },
+    {
+        "sloka_number": "52",
+        "question_number": 134,
+        "prasna": "किं भाग्यं देहवताम्",
+        "utharam": "आरोग्यं"
+    },
+    {
+        "sloka_number": "52",
+        "question_number": 135,
+        "prasna": "कः फली",
+        "utharam": "कृषिकृत्"
+    },
+    {
+        "sloka_number": "52",
+        "question_number": 136,
+        "prasna": "कस्य न पापं",
+        "utharam": "जपतः"
+    },
+    {
+        "sloka_number": "52",
+        "question_number": 137,
+        "prasna": "कः पूर्णः",
+        "utharam": "यः प्रजावान् स्यात्"
+    },
+    {
+        "sloka_number": "53",
+        "question_number": 138,
+        "prasna": "किं दुष्करं नराणाम्",
+        "utharam": "यन्मनसो निग्रहः सततम्"
+    },
+    {
+        "sloka_number": "53",
+        "question_number": 139,
+        "prasna": "को ब्रह्मचर्यवां स्यात्",
+        "utharam": "यश्चास्खलितोर्ध्वरेतस्कः"
+    },
+    {
+        "sloka_number": "54",
+        "question_number": 140,
+        "prasna": "का च परदेवतोक्ता",
+        "utharam": "चिच्छक्तिः"
+    },
+    {
+        "sloka_number": "54",
+        "question_number": 141,
+        "prasna": "को जगत्भर्ता",
+        "utharam": "सूर्यः"
+    },
+    {
+        "sloka_number": "54",
+        "question_number": 142,
+        "prasna": "सर्वेषां को जीवनहेतुः",
+        "utharam": "स पर्जन्यः"
+    },
+    {
+        "sloka_number": "55",
+        "question_number": 143,
+        "prasna": "कः शूरः",
+        "utharam": "यो भीतत्राता "
+    },
+    {
+        "sloka_number": "55",
+        "question_number": 144,
+        "prasna": "त्राता च कः",
+        "utharam": "सद्गुरुः"
+    },
+    {
+        "sloka_number": "55",
+        "question_number": 145,
+        "prasna": "को हि जगद्गुरुरुक्तः",
+        "utharam": "शम्भुः"
+    },
+    {
+        "sloka_number": "55",
+        "question_number": 146,
+        "prasna": "ज्ञानं कुतः",
+        "utharam": "शिवादेव"
+    },
+    {
+        "sloka_number": "56",
+        "question_number": 147,
+        "prasna": "मुक्तिं लभेत कस्मात्",
+        "utharam": "मुकुन्दभक्तेः"
+    },
+    {
+        "sloka_number": "56",
+        "question_number": 148,
+        "prasna": "मुकुन्दः कः",
+        "utharam": "यस्तारयेदविद्याम्"
+    },
+    {
+        "sloka_number": "56",
+        "question_number": 149,
+        "prasna": "का चाविद्या",
+        "utharam": "यदात्मनोऽस्फूर्तिः"
+    },
+    {
+        "sloka_number": "57",
+        "question_number": 150,
+        "prasna": "कस्य न शोकः",
+        "utharam": "यः स्यादक्रोधः"
+    },
+    {
+        "sloka_number": "57",
+        "question_number": 151,
+        "prasna": "किं सुखम्",
+        "utharam": "तुष्टिः"
+    },
+    {
+        "sloka_number": "57",
+        "question_number": 152,
+        "prasna": "को राजा",
+        "utharam": "रञ्चनकृत्"
+    },
+    {
+        "sloka_number": "57",
+        "question_number": 153,
+        "prasna": "कश्च श्वा",
+        "utharam": "नीचसेवको यः स्यात्"
+    },
+    {
+        "sloka_number": "58",
+        "question_number": 154,
+        "prasna": "को मायी",
+        "utharam": "परमेशः"
+    },
+    {
+        "sloka_number": "58",
+        "question_number": 155,
+        "prasna": "क इन्द्रजालायते",
+        "utharam": "प्रपञ्चोऽयम्"
+    },
+    {
+        "sloka_number": "58",
+        "question_number": 156,
+        "prasna": "कः स्वप्ननिभः",
+        "utharam": "जाग्रद्व्यवहारः"
+    },
+    {
+        "sloka_number": "58",
+        "question_number": 157,
+        "prasna": "सत्यमपि च किम्",
+        "utharam": "ब्रह्म"
+    },
+    {
+        "sloka_number": "59",
+        "question_number": 158,
+        "prasna": "किं मिथ्या",
+        "utharam": "यद्विद्यानाश्यम्"
+    },
+    {
+        "sloka_number": "59",
+        "question_number": 159,
+        "prasna": "तुच्छं तु",
+        "utharam": "शशविषाणादि"
+    },
+    {
+        "sloka_number": "59",
+        "question_number": 160,
+        "prasna": "का चानिर्वाच्या",
+        "utharam": "माया"
+    },
+    {
+        "sloka_number": "59",
+        "question_number": 161,
+        "prasna": "किं कल्पितम्",
+        "utharam": "द्वैतम्"
+    },
+    {
+        "sloka_number": "60",
+        "question_number": 162,
+        "prasna": "किं पारमार्थिकं स्यात्",
+        "utharam": "अद्वैतम्"
+    },
+    {
+        "sloka_number": "60",
+        "question_number": 163,
+        "prasna": "चाज्ञता कुतः",
+        "utharam": "अनादिः"
+    },
+    {
+        "sloka_number": "60",
+        "question_number": 164,
+        "prasna": "वपुषश्च पोषकं किम्",
+        "utharam": "प्रारब्धम्"
+    },
+    {
+        "sloka_number": "60",
+        "question_number": 165,
+        "prasna": "अन्नदायि किम्",
+        "utharam": "आयुः"
+    },
+    {
+        "sloka_number": "61",
+        "question_number": 166,
+        "prasna": "को ब्राह्मणैरुपास्यः",
+        "utharam": "गायत्र्यर्काग्निगोचरः शम्भुः"
+    },
+    {
+        "sloka_number": "61",
+        "question_number": 167,
+        "prasna": "गायत्र्यामादित्ये चाग्नौ शम्भौ च किं नु",
+        "utharam": "तत्तत्त्वम्"
+    },
+    {
+        "sloka_number": "62",
+        "question_number": 168,
+        "prasna": "प्रात्यक्षदेवता का",
+        "utharam": "माता"
+    },
+    {
+        "sloka_number": "62",
+        "question_number": 169,
+        "prasna": "पूज्यो गुरुश्च कः",
+        "utharam": "तातः"
+    },
+    {
+        "sloka_number": "62",
+        "question_number": 170,
+        "prasna": "कः सर्वदेवतात्मा",
+        "utharam": "विद्याकर्मान्वितो विप्रः"
+    },
+    {
+        "sloka_number": "63",
+        "question_number": 171,
+        "prasna": "कश्च कुलक्षयहेतुः",
+        "utharam": "सन्तापः सज्जनेषु योऽकारि"
+    },
+    {
+        "sloka_number": "63",
+        "question_number": 172,
+        "prasna": "केषाममोघ वचनम्",
+        "utharam": "ये च पुनः सत्यमौनशमशीलाः"
+    },
+    {
+        "sloka_number": "64",
+        "question_number": 173,
+        "prasna": "किं जन्म",
+        "utharam": "विषयसङ्गः"
+    },
+    {
+        "sloka_number": "64",
+        "question_number": 174,
+        "prasna": "किमुत्तरं जन्म",
+        "utharam": "पुत्रः स्यात्"
+    },
+    {
+        "sloka_number": "64",
+        "question_number": 175,
+        "prasna": "कोऽपरिहार्यः",
+        "utharam": "मृत्युः"
+    },
+    {
+        "sloka_number": "64",
+        "question_number": 176,
+        "prasna": "कुत्र पदं विन्यसेच्च",
+        "utharam": "दृक्पूते"
+    },
+    {
+        "sloka_number": "65",
+        "question_number": 177,
+        "prasna": "पात्रं किमन्नदाने",
+        "utharam": "क्षुधितम्"
+    },
+    {
+        "sloka_number": "65",
+        "question_number": 178,
+        "prasna": "कोऽर्च्यः",
+        "utharam": "हि भगवदवतारः"
+    },
+    {
+        "sloka_number": "65",
+        "question_number": 179,
+        "prasna": "कश्च भगवान्",
+        "utharam": "महेशः शङ्करनारायणात्मैकः"
+    },
+    {
+        "sloka_number": "66",
+        "question_number": 180,
+        "prasna": "फलमपि भगवद्भक्तेः किम्",
+        "utharam": "तल्लोकस्वरुपसाक्षात्त्वम्"
+    },
+    {
+        "sloka_number": "66",
+        "question_number": 181,
+        "prasna": "मोक्षश्च कः",
+        "utharam": "ह्यविद्यास्तमयः"
+    },
+    {
+        "sloka_number": "66",
+        "question_number": 182,
+        "prasna": "कः सर्ववेदभूः",
+        "utharam": "अथ च ॐ"
+    }
+]
