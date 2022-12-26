@@ -747,13 +747,14 @@ class GranthaSetup {
             if(curval == prasna_ids[x]) e.selected = true; 
             ele.appendChild(e);
         }
-        ele.onchange = function() {that.setPrasnaToLearn(curval);}
+        ele.onchange = function() {that.setPrasnaToLearn(ele.value);}
         //alert(ele.parentElement.innerHTML);
         //this.setPrasnaToLearn(prasna_ids[0]);
     }
 
     setPrasnaToLearn(p_id) {
         let ele = document.getElementById(GranthaSetup.select_learn_prasna_number_id);
+        //alert(ele.value);
         ele.value = p_id;
         this.setLearnPrasnaButtonStates();
         this.setPrasnaToLearnContent();        
