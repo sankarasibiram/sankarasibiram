@@ -1,0 +1,26 @@
+{
+    "grantha":"तोटकाष्टकम्",
+    "grantha_kartha": "तोटकाचार्यः",
+    "grantha_type": "stotra",
+    "error": "Meaning unavailable.",
+    "slokas": [
+        {
+            "sloka_number": 1,
+            "sloka": [
+                "I meditate upon the feet of my guru (śaṅkara). Oh! śaṅkara, I take refuge in you,  one well versed in the śāstras and a reservoir of knowledge contained in the upaniṣads."
+            ]
+        },
+        {
+            "sloka_number": 2,
+            "sloka": ["Oh Compassionate guru, protect me who is inundated with suffering in this world. Make me into a knower of the purport of the śāstras. Oh! śaṅkara, I take refuge in you."]
+        },
+        {
+            "sloka_number": 3,
+            "sloka": ["Oh Contemplator of ātma, men become content by you (your teachings). Make me a discerner of īśvara​: and jīva​:. Oh! śaṅkara, I take refuge in you."]
+        },
+        {
+            "sloka_number": 4,
+            "sloka": ["I've realized that you are īśvara​: verily. Dissuade me from moha (delusion/infatuation with saṃsāra). Oh! śaṅkara, I take refuge in you."]
+        }                                     
+    ]
+}

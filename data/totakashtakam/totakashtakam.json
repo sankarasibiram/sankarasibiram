@@ -18,7 +18,8 @@
     },
     "last_update": "2022-12-25",
     "meaning": [
-        {"lang": "telugu", "display": "తెలుగు","file_loc": "data/totakashtakam/totakashtakam_telugu.json"}
+        {"lang": "telugu", "display": "తెలుగు","file_loc": "data/totakashtakam/totakashtakam_telugu.json"},
+        {"lang": "English", "display": "English","file_loc": "data/totakashtakam/totakashtakam_english.json"}
     ],
     "anvaya_error": "अन्वयमलभ्यम्।",
     "slokas": [
