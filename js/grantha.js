@@ -275,7 +275,7 @@ class GranthaSetup {
             {"id": "sloka-include-anvayam-label", "text": "सान्वयम्"},
             {"id": "sloka-include-meaning-label", "text": "सार्थम्"},
             {"id": "sloka-repitition-label", "text": "अनूच्चारणम्"},
-            {"id": "practice-assisted-test-anchor", "text": "मौखिकाभ्यासः"}
+            {"id": "practice-assisted-test-anchor", "text": "प्रश्नोत्तरमौखिकाभ्यासः"}
             
         ];
 
@@ -441,7 +441,7 @@ class GranthaSetup {
     setupPracticeAssistedTestAnchor(){
         let that = this;
         let pid = GranthaSetup.practice_assisted_test_menu_id;
-        let t = LipiText.text("मौखिकाभ्यासः");
+        let t = LipiText.text("प्रश्नोत्तरमौखिकाभ्यासः");
         let a_id = "practice-assisted-test-anchor"
         let func = function() {that.setupPracticeAssistedTest();return false;}
         this.setupNavMenuAnchor(t, a_id, pid, func);
