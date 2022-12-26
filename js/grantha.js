@@ -303,20 +303,25 @@ class GranthaSetup {
     } 
 
     static load_grantha(myobj) {
-        //alert('loading..');
+        myobj.initializeDisplayState();
         myobj.grantha = new Grantha(document.getElementById(GranthaSetup.grantha_select_id).value);
-        //alert(JSON.stringify(myobj.grantha));
 
         document.getElementById(GranthaSetup.learn_dropdown_id).style.display = "";
-        document.getElementById(GranthaSetup.test_dropdown_id).style.display = ""; 
-        let g_t = myobj.grantha.grantha.grantha_type;
-        if (g_t == "prasnottara") {
-            myobj.setDisplayForPrasnottara();
-        }
         GranthaSetup.setGranthaCardDisplay(true);
         myobj.setGranthaTitle();
         this.open_grantha_location = document.getElementById(GranthaSetup.grantha_select_id).value;
-        document.getElementById("load-grantha-button-id").disabled = true;
+        document.getElementById("load-grantha-button-id").disabled = true;        
+        
+        let g_t = myobj.grantha.grantha.grantha_type;
+        if (g_t == "prasnottara") {
+            myobj.setDisplayForPrasnottara();
+            document.getElementById(GranthaSetup.test_dropdown_id).style.display = ""; 
+        } else if (g_t == "stotra") {
+            myobj.setDisplayForStotra();
+            document.getElementById(GranthaSetup.test_dropdown_id).style.display = "none";
+            removeElement("learn_prasnottarani_anchor");
+        }
+
         //alert(JSON.stringify(myobj.grantha));
     }
 
@@ -447,6 +452,11 @@ class GranthaSetup {
         this.setupLearnPrasnottaraniAnchor();
         this.setupPracticeAssistedTestAnchor();
     }
+
+    setDisplayForStotra() {
+        //alert('one');
+        this.setupLearnSlokasAnchor();
+    }    
 
     setGranthaSelectionOptions() {
         let sEle = document.getElementById(GranthaSetup.grantha_select_id);
@@ -1180,8 +1190,11 @@ class PracticePrasnaAssistedTest extends Test {
     }
 
     show_buttons_on_question() {
-        this.visibleButtons(["wrong_answer_button_id","correct_answer_button_id","skip_answer_button_id"]);
+        this.visibleButtons(["show_answer_button_id","wrong_answer_button_id","correct_answer_button_id","skip_answer_button_id"]);
         let that = this;
+
+        document.getElementById(this.getConfigItem("show_answer_button_id")).onclick = 
+            function() {that.showAnswer();};
 
         document.getElementById(this.getConfigItem("wrong_answer_button_id")).onclick = 
             function() {that.setAnswerState(0);};
@@ -1198,15 +1211,30 @@ class PracticePrasnaAssistedTest extends Test {
         let q = this.getNextQuestion();
         q.state = -1;
         this.questions_asked.push(q);
+
         let p1 = document.getElementById(GranthaSetup.prasna_learn_card_id);
         p1.style.display = "";
-        this.test_object.setPrasnaToLearnPrasnaAudio(q.question_number, true);
-        this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);
+
+        this.test_object.setPrasnaToLearnPrasnaAudio(q.question_number, true);        
         this.test_object.setPrasnaToLearnPrasnaContent(q.question_number);
-        this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
+
+        document.getElementById(this.getConfigItem("answer_div_id")).style.display = "none";
+        document.getElementById(this.getConfigItem("answer_div_id")).innerHTML = "";
+
+        document.getElementById(this.getConfigItem("answer_audio_div_id")).style.display = "none";
+        document.getElementById(this.getConfigItem("answer_audio_div_id")).innerHTML = "";
+
+        //this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);
+        //this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
         this.show_buttons_on_question();
 
-    }   
+    }
+    
+    showAnswer() {
+        let q = this.getNextQuestion();
+        this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
+        this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);
+    }
     
     reviewTest() {
         let questions = this.questions_asked;

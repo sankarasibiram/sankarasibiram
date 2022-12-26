@@ -1,5 +1,17 @@
 
 
+function removeElement(id) {
+	try {
+		var elem = document.getElementById(id);
+		if (elem) elem.parentNode.removeChild(elem);
+	} catch (err) {
+		console.log("Could not remove " + id);
+		return false;
+	}
+    return true;
+}
+
+
 function responseForGET(url) {
 	//var http = new ActiveXObject("MSXML2.XMLHTTP.3.0");
 	//alert(url);

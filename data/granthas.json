@@ -1,7 +1,7 @@
 {
     "granthas": [
         {"name": "प्रश्नोत्तररत्नमालिका", "file_location":"data/prasna/prasna.json"},
-        {"name": "शिवानन्दलहरी", "file_location":"data/sivanandalahari/sivanandalahari.json"}
+        {"name": "तोटकाष्टकम्", "file_location":"data/totakashtakam/totakashtakam.json"}
     ],
     "lipi": [
         {"name":"devanagari","display":"देवनागरी"},
