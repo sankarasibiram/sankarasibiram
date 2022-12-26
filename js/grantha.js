@@ -436,7 +436,7 @@ class GranthaSetup {
     setupPracticeAssistedTestAnchor(){
         let that = this;
         let pid = GranthaSetup.practice_assisted_test_menu_id;
-        let t = LipiText.text("मौकिकाभ्यासः");
+        let t = LipiText.text("मौखिकाभ्यासः");
         let a_id = "practice-assisted-test-anchor"
         let func = function() {that.setupPracticeAssistedTest();return false;}
         this.setupNavMenuAnchor(t, a_id, pid, func);
