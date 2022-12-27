@@ -253,19 +253,6 @@ class GranthaSetup {
 
     }
 
-    static check_lipi_changes(myobj) {
-        //alert(myobj);
-        myobj.setGranthaSelectionOptions();
-        myobj.lipiLabelChanges();
-        if (myobj.grantha) myobj.setGranthaTitle();
-        if (myobj.current_card == GranthaSetup.sloka_learn_card_id) {
-            let ele = document.getElementById(GranthaSetup.select_learn_sloka_id);
-            myobj.setSlokaToLearnSlokaContent(ele.value);
-        } else if (myobj.current_card == GranthaSetup.prasna_learn_card_id) {
-            myobj.setPrasnaToLearnContent();
-        }
-    }
-
     lipiLabelChanges() {
         let elementsArray = [
             {"id": "navbar_learn_anchor", "text":"अध्ययनम्​" },
@@ -281,7 +268,7 @@ class GranthaSetup {
 
         for (var x=0; x<elementsArray.length; x++) {
             try {
-                this.setElementText(elementsArray[x].id, elementsArray[x].text);
+                lipiText(elementsArray[x].id, elementsArray[x].text);
             } catch(err) {
                 console.log(elementsArray[x].id + " not found.");
             }
@@ -378,25 +365,12 @@ class GranthaSetup {
             document.getElementById(GranthaSetup.learn_dropdown_id).style.display = "none";
             document.getElementById(GranthaSetup.test_dropdown_id).style.display = "none";
         }
-        
+        this.lipiLabelChanges();
         this.disableAllDisplayCards();    
     }
 
-    setElementText(element_id, text) {
-        let e = document.getElementById(element_id);
-        try{
-            e.innerText = LipiText.text(text);
-        } catch (err) {
-            console.log("Error setting text value " + text + " to " + element_id);
-            throw err;
-        }
-    }
-
     disableAllDisplayCards() {
-        let arr = this.display_cards;
-        for (let x=0; x<arr.length; x++) {
-            document.getElementById(arr[x]).style.display = "none"
-        } 
+        setVisibilityState(this.display_cards, false);
     }
 
     showDisplayCard(card_to_show) {
@@ -410,20 +384,21 @@ class GranthaSetup {
         let ae = document.createElement("A");
         ae.classList.add("dropdown-item");
         ae.setAttribute("href","#");
-        ae.setAttribute("id",anchor_id);
-        ae.innerText = anchor_text;
+        ae.setAttribute("id",anchor_id);        
         ae.onclick = func_to_include;
-
         let e2 = document.getElementById(parent_element_id);
         e2.innerHTML = "";
         e2.style.display = "";
-        e2.appendChild(ae);     
+        e2.appendChild(ae);
+
+        lipiText(ae, anchor_text);   
     }
 
     setupLearnSlokasAnchor() {
         let that = this;
         let pid = GranthaSetup.learn_sloka_menu_id;
-        let t = LipiText.text("श्लोकाः");
+        //let t = LipiText.text("श्लोकाः");
+        let t = "श्लोकाः";
         let a_id = "learn_slokas_anchor"
         let func = function() {GranthaSetup.learnSlokas(that);return false;}
         this.setupNavMenuAnchor(t, a_id, pid, func);       
@@ -432,7 +407,8 @@ class GranthaSetup {
     setupLearnPrasnottaraniAnchor() {
         let that = this;
         let pid = GranthaSetup.learn_prasnottarani_menu_id;
-        let t = LipiText.text("प्रश्नोत्तराणि");
+        //let t = LipiText.text("प्रश्नोत्तराणि");
+        let t = "प्रश्नोत्तराणि";
         let a_id = "learn_prasnottarani_anchor"
         let func = function() {GranthaSetup.learnPrasnottarani(that);return false;}
         this.setupNavMenuAnchor(t, a_id, pid, func);       
@@ -441,7 +417,8 @@ class GranthaSetup {
     setupPracticeAssistedTestAnchor(){
         let that = this;
         let pid = GranthaSetup.practice_assisted_test_menu_id;
-        let t = LipiText.text("प्रश्नोत्तरमौखिकाभ्यासः");
+        //let t = LipiText.text("प्रश्नोत्तरमौखिकाभ्यासः");
+        let t = "प्रश्नोत्तरमौखिकाभ्यासः";
         let a_id = "practice-assisted-test-anchor"
         let func = function() {that.setupPracticeAssistedTest();return false;}
         this.setupNavMenuAnchor(t, a_id, pid, func);
@@ -466,7 +443,8 @@ class GranthaSetup {
         for (let i=0; i<granthas.length; i++) {
             let oEle = document.createElement("option");
             oEle.value = granthas[i].file_location;
-            oEle.text = LipiText.text(granthas[i].name);
+            //oEle.text = LipiText.text(granthas[i].name);
+            lipiText(oEle,granthas[i].name);
             if (cur_grantha == oEle.value) oEle.selected = true;
             sEle.appendChild(oEle);
         }
@@ -485,12 +463,11 @@ class GranthaSetup {
             sEle.appendChild(oEle);
         }
         let that = this;
-        sEle.onchange = function(){GranthaSetup.check_lipi_changes(that);}
     }
 
     setGranthaTitle() {
         if (this.grantha) {
-            this.setElementText(GranthaSetup.grantha_card_title_id, this.grantha.getGranthaName());
+            lipiText(GranthaSetup.grantha_card_title_id, this.grantha.getGranthaName());
         }
     }
 
@@ -572,7 +549,8 @@ class GranthaSetup {
         let t = this.grantha.getAnvaya(ele.value);
         for (let x=0; x<t.length; x++) {
             let d = document.createElement("text");
-            d.innerText = LipiText.text(t[x]);
+            //d.innerText = LipiText.text(t[x]);
+            lipiText(d,t[x]);
             mydiv.appendChild(d);
             mydiv.appendChild(document.createElement("BR"));
         }        
@@ -639,7 +617,8 @@ class GranthaSetup {
             _line_parts.forEach(lpart => {
 
                 let textEl = document.createElement("span");
-                textEl.innerText = LipiText.text(lpart.text) + " ";
+                //textEl.innerText = LipiText.text(lpart.text) + " ";
+                lipiText(textEl, (lpart.text + " "));
 
                 if (lpart.type == "text") {
                     textEl.classList.add("SlokaText");
@@ -801,7 +780,8 @@ class GranthaSetup {
 
         let d1 = document.createElement("span");
         d1.classList.add("fw-bold", "lh-lg", "PrasnaText");
-        d1.innerText = LipiText.text(pData.prasna)+" ?";
+        //d1.innerText = LipiText.text(pData.prasna)+" ?";
+        lipiText(d1, (pData.prasna+" ?"));
         pDiv.append(d1);
     }
 
@@ -827,7 +807,8 @@ class GranthaSetup {
 
         let d2 = document.createElement("span");
         d2.classList.add("fw-bold", "lh-lg", "UtharamText");        
-        d2.innerText = LipiText.text(pData.utharam) + " ।";
+        //d2.innerText = LipiText.text(pData.utharam) + " ।";
+        lipiText(d2, (pData.utharam + " ।"));
         uDiv.append(d2); 
     }
 
@@ -956,9 +937,7 @@ class Test {
         this.test_object = myobj;   
     }
 
-    set_question_ids() {
-
-    }
+    set_question_ids() {}
 
     getConfigItem(item_id) {
         if (Object.keys(this.config).includes(item_id)) return this.config[item_id];
@@ -982,6 +961,8 @@ class Test {
         //Clear all display sections
         this.clearAllDisplaySections();
 
+        //setVisibilityState(this.divs, false);
+        
         for (let x=0; x<this.divs.length; x++) {
             let y = this._set_display_visible(this.divs[x]);
         }
@@ -1060,13 +1041,14 @@ class Test {
     }
 
     visibleButtons(visible_buttons) {
-        
+
         let all_buttons = this.buttons;
         for (let x=0; x<all_buttons.length; x++) {
             //console.log("setting state of " + all_buttons[x]);
             if (visible_buttons.includes(all_buttons[x])) this._set_display_visible(all_buttons[x], true);
             else this._set_display_visible(all_buttons[x], false);
         }
+
     }
 
     _enable_button(button_id, flag) {
@@ -1103,18 +1085,14 @@ class Test {
     get_question(question) {
     }
 
-    get_answer(question) {
-
-    }
+    get_answer(question) {}
 
     getNextQuestion() {}
 
-    showAnswer() {
-    }
+    showAnswer() {}
 
 
-    showAnswerOptions() {
-    }
+    showAnswerOptions() {}
 
     setAnswerState(ans) {
         let q = this.questions_asked[this.questions_asked.length - 1];
@@ -1123,17 +1101,9 @@ class Test {
         this.showQuestion();
     }
 
-    answerSkipped() {}
-
-    answeredRight() {}
-
-    answeredWrong() {}
-
     logQuestionAnswer() {}
  
-    reviewTest() {
-
-    }
+    reviewTest() { }
 
     timeExpired() {
         this.testInProgress = false;
@@ -1194,17 +1164,11 @@ class PracticePrasnaAssistedTest extends Test {
         this.visibleButtons(["show_answer_button_id","wrong_answer_button_id","correct_answer_button_id","skip_answer_button_id"]);
         let that = this;
 
-        document.getElementById(this.getConfigItem("show_answer_button_id")).onclick = 
-            function() {that.showAnswer();};
-
-        document.getElementById(this.getConfigItem("wrong_answer_button_id")).onclick = 
-            function() {that.setAnswerState(0);};
-
-        document.getElementById(this.getConfigItem("correct_answer_button_id")).onclick = 
-        function() {that.setAnswerState(1);};
-
-        document.getElementById(this.getConfigItem("skip_answer_button_id")).onclick = 
-        function() {that.setAnswerState(-1);};
+        //setVisibilityState(["show_answer_button_id","wrong_answer_button_id","correct_answer_button_id","skip_answer_button_id"], true);        
+        document.getElementById(this.getConfigItem("show_answer_button_id")).onclick = function() {that.showAnswer();};
+        document.getElementById(this.getConfigItem("wrong_answer_button_id")).onclick = function() {that.setAnswerState(0);};
+        document.getElementById(this.getConfigItem("correct_answer_button_id")).onclick = function() {that.setAnswerState(1);};
+        document.getElementById(this.getConfigItem("skip_answer_button_id")).onclick = function() {that.setAnswerState(-1);};
     }
 
     showQuestion() {
@@ -1213,28 +1177,19 @@ class PracticePrasnaAssistedTest extends Test {
         q.state = -1;
         this.questions_asked.push(q);
 
-        let p1 = document.getElementById(GranthaSetup.prasna_learn_card_id);
-        p1.style.display = "";
-
         this.test_object.setPrasnaToLearnPrasnaAudio(q.question_number, true);        
         this.test_object.setPrasnaToLearnPrasnaContent(q.question_number);
+        this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
+        this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);        
 
-        document.getElementById(this.getConfigItem("answer_div_id")).style.display = "none";
-        document.getElementById(this.getConfigItem("answer_div_id")).innerHTML = "";
-
-        document.getElementById(this.getConfigItem("answer_audio_div_id")).style.display = "none";
-        document.getElementById(this.getConfigItem("answer_audio_div_id")).innerHTML = "";
-
-        //this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);
-        //this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
+        setVisibilityState([GranthaSetup.prasna_learn_card_id], true);
+        setVisibilityState([this.getConfigItem("answer_div_id"), this.getConfigItem("answer_audio_div_id")], false);
         this.show_buttons_on_question();
 
     }
     
     showAnswer() {
-        let q = this.getNextQuestion();
-        this.test_object.setPrasnaToLearnUttaramContent(q.question_number);
-        this.test_object.setPrasnaToLearnUttaramAudio(q.question_number, false);
+        setVisibilityState([this.getConfigItem("answer_div_id"), this.getConfigItem("answer_audio_div_id")], true);
     }
     
     reviewTest() {
@@ -1271,7 +1226,8 @@ class PracticePrasnaAssistedTest extends Test {
                     else if (question[key] == 0) td.innerText = "Incorrect"; //"&#x2717;";
                     else if (question[key] == 1) td.innerText = "Correct"; //"&#x2713;";
                 } else if ((key == "prasna") || (key == "utharam") ) {
-                    td.innerText = LipiText.text(question[key]);
+                    //td.innerText = lipiText(question[key]);
+                    lipiText(td,question[key]);
                 } else {
                     td.innerText =question[key];
                 }
@@ -1280,19 +1236,12 @@ class PracticePrasnaAssistedTest extends Test {
         }
 
         let p = document.getElementById(GranthaSetup.generic_content_card_id);
-        p.style.display = "";
+
         p.innerHTML = "";
         p.appendChild(tbl);
 
-        
-
-        let p1 = document.getElementById(GranthaSetup.prasna_learn_card_id);
-        p1.style.display = "none";
-
-        let x = document.getElementById(this.getConfigItem("review_button_id"));
-        x.style.display = "none";
-        
-        
+        setVisibilityState([GranthaSetup.generic_content_card_id], true);
+        setVisibilityState([GranthaSetup.prasna_learn_card_id, this.getConfigItem("review_button_id")], false);
 
     }
 }
