@@ -13,9 +13,7 @@
         <link rel="stylesheet" href="css/app_style.css">
     
         <title>शङ्करशिबिरम्</title>
-    
-        <style>=
-        </style>
+
     </head>
     <body>
 
@@ -37,18 +35,15 @@
                                 <a class="nav-link active multi-lipi" aria-current="page" href="#" onclick="app_display.home();">गुरुकुलम्</a>
                             </li>
                             <li id="navbar-learn-dropdown-id" class="nav-item dropdown">
-                                <a id="learn-dropdown-id" class="nav-link dropdown-toggle multi-lipi" href="#" id="navbarScrollingDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    अध्ययनम्
-                                </a>
+                                <a id="learn-dropdown-id" class="nav-link dropdown-toggle multi-lipi" 
+                                    href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">अध्ययनम्</a>
                                 <ul id="submenu-learn-dropdown-id" class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 </ul>
                             </li>
                             <li id="navbar-practice-dropdown-id" class="nav-item dropdown">
                                 <a id="practice-dropdown-id" class="nav-link dropdown-toggle multi-lipi" href="#" id="navbarScrollingDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    अभ्यासः
-                                </a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">अभ्यासः</a>
                                 <ul id="submenu-practice-dropdown-id" class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 </ul>
                             </li>
@@ -71,7 +66,7 @@
                 <div id="practice-test-card">
                     <div style="position: relative">
                         <div id="timer" class="clock" >120</div>
-                        <div id="grantha-title" class="card-title-1" >Test Title</div>
+                        <div id="grantha-title" class="card-title-1 multi-lipi" >Test Title</div>
                     </div>
 
                     <div class="card-body card-body-1" >
@@ -94,7 +89,7 @@
 
                                         <input id="select-meaning-chkbox"  type="checkbox">                     
                                         <label id="sloka-include-meaning-label" class="multi-lipi"> सार्थम् </label> 
-                                        <select id="select-meaning-lang" class="nav-item dropdown sloka-meaning-select multi-lipi border-0"></select>
+                                        <select id="select-meaning-lang" class="nav-item dropdown sloka-meaning-select border-0"></select>
                                         
                                         <input id="sloka-audio-checkbox" type="checkbox" class="ms-0">
                                         <label class="ms-0 multi-lipi">अनूच्चारणम्</label>
@@ -102,7 +97,8 @@
                                             <span id="sloka-with-student-audio"></span>
                                             <span id="sloka-audio"></span>
                                         </span>
-                                        
+                                        <input id="select-autoplay-chkbox"  type="checkbox" value="">                     
+                                        <label id="sloka-autoplay-label" class="me-1"> Autoplay </label> 
                                     </div>
 
                                 </div>

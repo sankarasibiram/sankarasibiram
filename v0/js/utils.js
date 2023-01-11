@@ -291,7 +291,20 @@ function getXMLResponse(url) {
 	return (getXMLObject(responseForGET(url)));
 }
 
-function includeHTML() {
+function includeHTML(div_id, url) {
+	let d = document.getElementById(div_id);
+	//alert(d)
+	//d.removeAttribute("w3-include-html");
+	if (d == null) {
+		console.log("Attempting to set " + url + " to " + div_id + " failed as div was not found." );
+		return;
+	}
+	let txt = responseForGET(url);
+	if(txt) d.innerHTML = txt;
+	else d.innerHTML = "Page not found."
+}
+
+function includeHTML1() {
 	let z, i, elmnt, file, xhttp;
 	/* Loop through a collection of all HTML elements: */
 	z = document.getElementsByTagName("*");

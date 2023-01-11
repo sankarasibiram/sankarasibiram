@@ -1633,31 +1633,21 @@ class ApplicationSetup extends BaseDisplay {
         let staticdiv = this.get_config_item("static_page_div");
         //if(staticdiv != mydiv) staticdiv.innerHTML = "";
         document.getElementById(mydiv).style.display = "";
+        Lipi.change_lipi();
     }
 
     home() {
         let pg = this.get_config_item("homepage");
         let mydiv = this.get_config_item("static_page_div");
         this.show_static_page(pg);
-        this.show_show_card(mydiv);
     }
 
     show_static_page(page_location) { 
         let div_id_to_show = (this.get_config_item("static_page_div"));     
-        let e = document.getElementById(div_id_to_show)
-        e.setAttribute("w3-include-html", page_location);
-        includeHTML();
+        includeHTML(div_id_to_show, page_location);
         this.show_card(div_id_to_show);
     }
 
-
-    home() {
-        let e = document.getElementById("home-page")
-        e.setAttribute("w3-include-html",this.get_config_item("homepage"));
-        includeHTML()
-        e.style.display = "";
-        document.getElementById("grantha-card").style.display = "none";
-    }
 }
 
 class GranthaDisplay extends BaseDisplay {
@@ -1874,28 +1864,47 @@ class GranthaDisplay extends BaseDisplay {
         chkbox.disabled = false;
         let sloka_span = document.getElementById("sloka-audio");
         let sloka_stud_span = document.getElementById("sloka-with-student-audio");
+        let auto_play = false;
+        let autoEle = this._get_element("select-autoplay-chkbox");
+        if(autoEle) auto_play = autoEle.checked;
+
         sloka_span.innerHTML = "";
         sloka_stud_span.innerHTML = "";
 
-        if (s1) {
-            let s1Ele = document.createElement("Audio");
+
+        let autoplayFunction = function() {
+            let autoplayElement = document.getElementById("select-autoplay-chkbox");
+            if (autoplayElement == null) return;
+            if (autoplayElement.checked) {
+                that.show_new_item("next");
+            }            
+        }
+
+        let s1Ele = null; // for sloka
+        let s2Ele = null; // for with student
+
+        if (s1) {          
+            s1Ele = document.createElement("Audio");  
             s1Ele.preload = "none";
             s1Ele.controls = true;
             s1Ele.setAttribute("src", s1);            
             sloka_span.appendChild(s1Ele);
-            s1Ele.classList.add("app-audio");           
+            s1Ele.classList.add("app-audio"); 
+            s1Ele.addEventListener("ended", autoplayFunction );           
         } else {
             if (s2) chkbox.checked = true;
             chkbox.disabled = true;                
         }
+        //alert(s1E.parentElement.innerHTML)
 
-        if (s2) {
-            let s2Ele = document.createElement("Audio");
+        if (s2) {            
+            s2Ele = document.createElement("Audio");
             s2Ele.preload = "none";
             s2Ele.controls = true;
             s2Ele.setAttribute("src", s2);            
             sloka_stud_span.appendChild(s2Ele);
             s2Ele.classList.add("app-audio");
+            s2Ele.addEventListener("ended", autoplayFunction );               
         } else {
             chkbox.checked = false;
             chkbox.disabled = true;
@@ -1908,6 +1917,21 @@ class GranthaDisplay extends BaseDisplay {
         } else {
             sloka_span.style.display = "";
             sloka_stud_span.style.display = "none";
+        }
+
+        
+        if (auto_play) {
+            if (chkbox.checked) {
+                if (s2Ele) {
+                    s2Ele.preload = true; 
+                    s2Ele.autoplay = true;
+                } 
+            } else  {
+                if (s1Ele) {
+                    s1Ele.preload = true; 
+                    s1Ele.autoplay = true;
+                } 
+            } 
         }
         chkbox.onclick = function() {that.setSlokaToLearnAudio(_sloka);}
     }
@@ -1939,13 +1963,21 @@ class GranthaDisplay extends BaseDisplay {
         let that = this;
         let cur_index = this.get_data_item("displayed-question-index");
         let sele_el = this._get_element("select-item-button");
+        let item_list = this.get_data_item("item_list");
 
-        if (val == "next") that.set_data_item("displayed-question-index", (cur_index+1) );
-        else if (val == "previous") that.set_data_item("displayed-question-index", (cur_index - 1) );
-        else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
+        let show_new_item = true;
+
+        if (val == "next") {
+            if (cur_index == (item_list.length - 1) ) show_new_item = false;
+            else that.set_data_item("displayed-question-index", (cur_index+1) );
+        } else if (val == "previous") {
+            if (cur_index == 0) show_new_item = false;
+            else that.set_data_item("displayed-question-index", (cur_index - 1) );
+        } else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
+        
         if(sele_el) sele_el.selectedIndex = this.get_data_item("displayed-question-index");
 
-        that.show_item();
+        if(show_new_item) that.show_item();
     }
 
     show_item() {
