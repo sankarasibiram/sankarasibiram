@@ -1,0 +1,34 @@
+{
+    "grantha": "प्रश्नोत्तररत्नमालिका",
+    "grantha_kartha": "श्री शङ्कराचार्यः",
+    "grantha_type": "prasnottara",
+    "type": "oral",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who wrote prasnothararatnamalika",
+        "correct_answer": [
+            "shankaracharya"
+          ],
+        "question_audio": "data/prasna/audio/pr_question_1.m4a"
+
+      },
+      {
+        "id": 2,
+        "question": "How many slokas are in prasnottararatnamalika?",
+        "correct_answer": [
+            "67"
+          ],
+        "question_audio": "data/prasna/audio/pr_question_4.m4a"
+      },
+      {
+        "id": 3,
+        "question": "How many prasnas are in prasnottararatnamalika?",
+        "correct_answer": [
+            "182", "180"
+          ],
+        "question_audio": "data/prasna/audio/pr_question_6.m4a"
+      }      
+
+    ]
+}

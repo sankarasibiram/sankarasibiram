@@ -1,0 +1,13 @@
+{
+    "granthas": [
+        {"name": "प्रश्नोत्तररत्नमालिका", "file_location":"data/prasna/prasna.json"},
+        {"name": "तोटकाष्टकम्", "file_location":"data/totakashtakam/totakashtakam.json"}
+    ],
+    "lipi": [
+        {"name":"devanagari","display":"देवनागरी"},
+        {"name":"telugu","display":"తెలుగు"},
+        {"name":"kannada","display":"ಕನ್ನಡ"},
+        {"name":"tamil", "display":"தமிழ்"},
+        {"name":"iast","display":"IAST"}
+    ]
+}

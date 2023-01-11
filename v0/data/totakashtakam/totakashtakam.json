@@ -1,0 +1,103 @@
+{
+    "grantha":"तोटकाष्टकम्",
+    "grantha_kartha": "तोटकाचार्यः",
+    "grantha_type": "stotra",
+    "intro_file": "data/totakashtakam/totakashtakam_intro.html",
+    "audio_files": {
+        "folder": "data/totakashtakam/audio/",
+        "file_type": "m4a",
+        "slokas": {
+            "prefix": "totakashtakam_sloka_",
+            "availability": false,
+            "list": []
+        },
+        "slokas_with_student":{
+            "prefix": "totakashtakam_sloka_repeat_",
+            "availability": false,
+            "list": []            
+        }
+    },
+    "last_update": "2022-12-25",
+    "meaning": [
+        {"lang": "telugu", "display": "తెలుగు","file_loc": "data/totakashtakam/totakashtakam_telugu.json"},
+        {"lang": "English", "display": "English","file_loc": "data/totakashtakam/totakashtakam_english.json"}
+    ],
+    "practice_tests": [
+        {
+          "name": "अभ्यासप्रश्नाः",
+          "type": "multiple-choice",
+          "source": "test-file",
+          "file_location": "data/totakashtakam/totakashtakam_test_1.json",
+          "max_questions": 3,
+          "max_time": 2
+
+        }
+    ],
+    "anvaya_error": "अन्वयमलभ्यम्।",
+    "slokas": [
+        {
+            "sloka_number": 1,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"विदिताखिलशास्त्रसुधाजलधे महितोपनिषद्कथितार्थनिधे ।"}]},
+                {"line_parts": [{"type":"text", "text":"हृदये कलये विमलं चरणं भव शङ्करदेशिक​ मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["(अहं) हृदये (गुरोः शङ्करस्य​) विमलं चरणं कलये । हे विदित-अखिल-शास्त्र-सुधा-जलधे ! हे महित-उपनिषत्-कथित-अर्थ-निधे ! हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 2,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"करुणावरुणालय पालय मां भवसागरदुःखविदूनहृदम्‌ ।"}]},
+                {"line_parts": [{"type":"text", "text":"रचयाखिलदर्शनतत्त्वविदं भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["हे करुणावरुणालय! भवसागरदुःखविदूनहृदम्‌ मां पालय । माम् अखिलदर्शनतत्त्वविदं रचय । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 3,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"भवता जनता सुहिता भविता निजबोधविचारणचारुमते ।"}]},
+                {"line_parts": [{"type":"text", "text":"कलयेश्वरजीवविवेकविदं भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["हे निजबोधविचारणचारुमते! भवता जनता सुहिता भविता । (माम्) ईश्वरजीवविवेकविदं कलय । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 4,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"भव एव भवानिति मे नितरां समजायत चेतसि कौतुकिता ।"}]},
+                {"line_parts": [{"type":"text", "text":"मम वारय मोहमहाजलधिं भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["भवान् भव: एव इति मे चेतसि नितरां कौतुकिता समजायत । मम मोहमहाजलधिं वारय । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 5,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"सुकृतेऽधिकृते बहुधा भवतो भविता समदर्शनलालसता ।"}]},
+                {"line_parts": [{"type":"text", "text":"अतिदीनमिमं परिपालय मां भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["बहुधा अधिकृते सुकृते भवतः समदर्शनलालसता भविता । इमं अतिदीनं माम् परिपालय । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 6,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"जगतीमवितुं कलिताकृतयो विचरन्ति महामहसश्छलतः ।"}]},
+                {"line_parts": [{"type":"text", "text":"अहिमांशुरिवात्र विभासि गुरो भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["महामहस: छलतः कलित आकृतयः जगतीम् अवितुम् विचरन्ति । हे गुरो! (तेषाम्) अहिमांशु: इव विभासि । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 7,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"गुरुपुङ्गव​ पुङ्गव​केतन ते समतामयतां नहि कोऽपि सुधीः ।"}]},
+                {"line_parts": [{"type":"text", "text":"शरणागतवत्सल तत्त्वनिधे भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["हे गुरुपुंगव! हे पुंगवकेतन! हे शरणागतवत्सल! हे तत्त्वनिधे! कः अपि सुधीः ते समताम् अयतां न हि । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        },
+        {
+            "sloka_number": 8,
+            "sloka": [
+                {"line_parts": [{"type":"text", "text":"विदिता न मया विशदैककला न च किञ्चन काञ्चनमस्ति गुरो ।"}]},
+                {"line_parts": [{"type":"text", "text":"द्रुतमेव विधेहि कृपां सहजां भव शङ्करदेशिक मे शरणम्‌ ॥"}]}
+            ],
+            "anvaya": ["हे गुरो! मया एककला विशदा न विदिता । किञ्चन काञ्चनं न अस्ति । सहजां कृपां एव द्रुतं विधेहि । हे शङ्करदेशिक ! मे शरणम्‌ भव ॥"]
+        }                     
+    ]
+}

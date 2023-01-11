@@ -1,0 +1,123 @@
+{
+    
+    "high_lelel_divs": ["home-page", "grantha-card"], 
+    "my_app_display": {
+        "buttons": [
+            {"name":"submit-button", "id":"submit-response-btn", "text": "Submit"},
+            {"name":"start-button", "id":"start-btn", "text": "Submit"},
+            {"name":"previous-button", "id":"previous-btn", "text": "Submit"},
+            {"name":"skip-button", "id":"skip-btn", "text": "Submit"},
+            {"name":"select-item-button", "id": "select-item-btn", "text":"one"},
+            {"name":"next-button", "id":"next-btn", "text": "Submit"},
+            {"name":"review-button", "id":"review-btn", "text": "Submit"},
+            {"name":"show-answer-button", "id":"show-answer-btn", "text": "Show Answer"},
+            {"name":"correct-button", "id":"correct-btn", "text":"Correct"},
+            {"name":"incorrect-button", "id":"incorrect-btn", "text": "Incorrect"}           
+        ],
+
+        "display-divs":[
+            {"name":"sloka_container-div", "id": "sloka_container-div"},
+            {"name":"learn-sloka-div", "id": "learn-sloka-div"},
+            {"name":"learn-sloka-anvaya-div", "id": "learn-sloka-anvaya-div"},
+            {"name":"learn-sloka-meaning-div", "id": "learn-sloka-meaning-div"},
+            {"name":"question-div", "id": "practice-question-div"},
+            {"name":"question-audio-div", "id": "practice-question-audio-div"},
+            {"name":"answer-div", "id": "practice-answer-div"},
+            {"name":"answer-audio-div", "id": "practice-answer-audio-div"},
+            {"name":"options-div", "id": "practice-options-div"},
+            {"name":"review-div", "id": "practice-review-div"},
+            {"name":"info-div", "id": "practice-question-info-div"},
+            {"name":"settings-div", "id":"practice-settings-div"},
+            {"name":"timer-div", "id":"timer"},
+            {"name":"practice-multiple-choice-info-div", "id":"practice-multiple-choice-info-div"},
+            {"name":"practice-multiple-choice-question-div", "id":"practice-multiple-choice-question-div"},
+            {"name":"practice-multiple-choice-options-div", "id":"practice-multiple-choice-options-div"}              
+        ],
+
+        "other-elements": [
+            {"name":"grantha-select", "id":"grantha-select"},
+            {"name":"learn-dropdown-id", "id":"learn-dropdown-id"},
+            {"name":"practice-dropdown-id", "id":"practice-dropdown-id"},            
+            {"name": "max-questions", "id":"practice-max-questions"},
+            {"name": "max-time", "id":"practice-max-time"},
+            {"name": "sloka-anvaya-chkbox", "id":"sloka-anvaya-chkbox"},
+            {"name": "select-meaning-chkbox", "id":"select-meaning-chkbox"},
+            {"name": "select-meaning-lang", "id":"select-meaning-lang"}, 
+            {"name": "sloka-audio-checkbox", "id":"sloka-audio-checkbox"},
+            {"name": "sloka-audio", "id":"sloka-audio"},
+            {"name": "sloka-with-student-audio", "id":"sloka-with-student-audio"},
+            {"name": "sloka_number_label", "id": "sloka_number_label"}
+        ],
+
+        "states": [
+            {
+                "state": "on-practice-multiple-choice-test-open",
+                "displayed-buttons": ["start-button"], 
+                "displayed-divs": ["settings-div"]
+            },
+            {
+                "state": "on-practice-multiple-choice-test-start", 
+                "displayed-buttons":["previous-button","select-item-button", "next-button", "submit-button"],
+                "displayed-divs": ["practice-multiple-choice-info-div", "practice-multiple-choice-question-div", 
+                "practice-multiple-choice-options-div", "timer-div" ],
+                "enable_elements": ["select-item-button","next-button","previous-button"],
+                "disable_elements": ["practice-dropdown-id","learn-dropdown-id","grantha-select"]
+            },
+            {
+                "state": "on-practice-multiple-choice-test-submit", 
+                "displayed-buttons":["review-button"], 
+                "displayed-divs": ["timer-div"],
+                "enable_elements": ["practice-dropdown-id","learn-dropdown-id","grantha-select"],
+                "disable_elements": []
+            },
+            {
+                "state": "on-practice-multiple-choice-test-review", 
+                "displayed-buttons":["previous-button","select-item-button", "next-button"],
+                "displayed-divs": ["practice-multiple-choice-info-div", "practice-multiple-choice-question-div", 
+                "practice-multiple-choice-options-div", "timer-div" ],
+                "enable_elements": [],
+                "disable_elements": []
+            },           
+            {
+                "state": "on-practice-oral-test-open", 
+                "displayed-buttons": ["start-button"], 
+                "displayed-divs": ["settings-div"]
+            },
+            {
+                "state": "on-practice-oral-test-start", 
+                "displayed-buttons":["previous-button","select-item-button", "next-button", 
+                    "submit-button", "show-answer-button", "correct-button", "incorrect-button" ],
+                "displayed-divs": ["question-div", "answer-div", "info-div","timer-div"],
+                "enable_elements": ["select-item-button","next-button","previous-button"],
+                "disable_elements": ["practice-dropdown-id","learn-dropdown-id","grantha-select"]
+            },                        
+            {
+                "state": "on-practice-test-submit", 
+                "displayed-buttons":["review-button"], 
+                "displayed-divs": ["timer-div"],
+                "enable_elements": ["practice-dropdown-id","learn-dropdown-id","grantha-select"],
+                "disable_elements": []
+            },
+            {
+                "state": "on-practice-test-review", 
+                "displayed-buttons":["previous-button","select-item-button", "next-button"],
+                "displayed-divs": ["question-div", "info-div", "options-div","timer-div" ],
+                "enable_elements": [],
+                "disable_elements": []
+            },
+            {
+                "state": "learn-sloka", "displayed-buttons":["previous-button","select-item-button", "next-button"],
+                "displayed-divs": ["sloka_container-div", "learn-sloka-div","learn-sloka-anvaya-div", "learn-sloka-meaning-div","sloka_number_label"],
+                "enable_elements": ["select-item-button","next-button","previous-button"],
+                "disable_elements": []
+            },
+            {
+                "state": "learn-prasna", "displayed-buttons":["previous-button","select-item-button", "next-button"],
+                "displayed-divs": ["question-div","info-div", "question-audio-div", "answer-div", "answer-audio-div" ],
+                "enable_elements": ["select-item-button","next-button","previous-button"],
+                "disable_elements": []
+            }            
+        ]
+    }  
+}
+

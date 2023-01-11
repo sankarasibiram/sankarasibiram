@@ -1,0 +1,2500 @@
+{
+  "grantha": "प्रश्नोत्तररत्नमालिका",
+  "grantha_kartha": "श्री शङ्कराचार्यः",
+  "grantha_type": "prasnottara",
+  "intro_file": "data/prasna/prasna_intro.html",
+  "audio_files": {
+    "folder": "data/prasna/audio/",
+    "file_type": "m4a",
+    "slokas": {
+      "prefix": "pr_sloka_",
+      "availability": false,
+      "list": [
+        24,
+        25
+      ]
+    },
+    "slokas_with_student": {
+      "prefix": "pr_sloka_repeat_",
+      "availability": true,
+      "list": [
+        1,2,3,13,24,26,27,28,29,30,31,32,33,34
+      ]
+    },
+    "questions": {
+      "prefix": "pr_question_",
+      "availability": false,
+      "list": [
+
+      ]
+    },
+    "answers": {
+      "prefix": "pr_answer_",
+      "availability": false,
+      "list": [
+
+      ]
+    }
+  },
+  "last_update": "2022-12-14",
+  "meaning": [
+    {
+      "lang": "telugu",
+      "display": "తెలుగు",
+      "file_loc": "data/prasna/prasna_telugu.json"
+    },
+    {
+      "lang": "english",
+      "display": "English",
+      "file_loc": "data/prasna/prasna_english.json"
+    }
+  ],
+  "practice_tests": [
+    {
+      "name": "यन्त्रनिर्देशितमौखिकाभ्यासः",
+      "type": "oral",
+      "source": "auto-generated",
+      "max_questions": 20,
+      "max_time": 5
+    },
+    {
+      "name": "यन्त्रनिर्देशितविकल्पिकात्मिकप्रश्नाः",
+      "type": "multiple-choice",
+      "source": "auto-generated",
+      "max_questions": 20,
+      "max_time": 5
+    },
+    {
+      "name": "परीक्षकनिर्देशितविकल्पिकात्मिकप्रश्नाः",
+      "type": "multiple-choice",
+      "source": "test-file",
+      "file_location": "data/prasna/prasna_test_1.json",
+      "max_questions": 3,
+      "max_time": 2
+    }
+  ],
+  "prasna_uttaras_only_file": "data/prasna/prasna_q_a.json",
+  "anvaya_error": "अन्वयमलभ्यम्।",
+  "slokas": [
+    {
+      "sloka_number": 1,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "text",
+              "text": "कः खलु नालङ्क्रियते दृष्टादृष्टार्थसाधनपटीयान् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "text",
+              "text": "अमुया कण्ठस्थितया प्रश्नोत्तररत्नमालिकया ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "दृष्ट-अदृष्ट-अर्थ-साधन-पटीयान् कः अमुया कण्ठस्थितया प्रश्नोत्तररत्नमालिकया न खलु अलङ्क्रियते?"
+      ]
+    },
+    {
+      "sloka_number": 2,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 1,
+              "text": "भगवन् किमुपादेयं"
+            },
+            {
+              "type": "utharam",
+              "number": 1,
+              "text": "गुरुवचनं"
+            },
+            {
+              "type": "prasna",
+              "number": 2,
+              "text": "हेयमपि किम्"
+            },
+            {
+              "type": "utharam",
+              "number": 2,
+              "text": "अकार्यम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 3,
+              "text": "को गुरुः"
+            },
+            {
+              "type": "utharam",
+              "number": 3,
+              "text": "अधिगततत्त्वः शिष्यहितायोद्यतः सततम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "1. हे भगवन्! किम् उपादेयम्? गुरुवचनम्।",
+        "2. अपि किम् हेयम्? अकार्यम्।",
+        "3. कः गुरुः? अधिगततत्त्वः, सततं शिष्य-हिताय उद्यतः॥"
+      ]
+    },
+    {
+      "sloka_number": 3,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 4,
+              "text": "त्वरितं किं कर्तव्यं विदुषां"
+            },
+            {
+              "type": "utharam",
+              "number": 4,
+              "text": "संसारसन्ततिच्छेदः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 5,
+              "text": "किं मोक्षतरोर्बीजं"
+            },
+            {
+              "type": "utharam",
+              "number": 5,
+              "text": "सम्यक्ज्ञानं क्रियासिद्धम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "4. विदुषां त्वरितं किं कर्तव्यम् ? संसारसन्ततिच्छेदः ।",
+        "5. मोक्ष-तरोः किं बीजम्? क्रियासिद्धम् सम्यक्ज्ञानं ॥"
+      ]
+    },
+    {
+      "sloka_number": 4,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 6,
+              "text": "कः पथ्यतरो"
+            },
+            {
+              "type": "utharam",
+              "number": 6,
+              "text": "धर्मः "
+            },
+            {
+              "type": "prasna",
+              "number": 7,
+              "text": "कः शुचिरिह"
+            },
+            {
+              "type": "utharam",
+              "number": 7,
+              "text": "यस्य मानसं शुद्धम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 8,
+              "text": "कः पण्डितो"
+            },
+            {
+              "type": "utharam",
+              "number": 8,
+              "text": "विवेकी"
+            },
+            {
+              "type": "prasna",
+              "number": 9,
+              "text": "किं विषम्"
+            },
+            {
+              "type": "utharam",
+              "number": 9,
+              "text": "अवधीरणा गुरुषु ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "6. कः पथ्यतरः?  धर्मः।",
+        "7. इह कः शुचिः? यस्य मानसं शुद्धम्।",
+        "8. कः पण्डितः? विवेकी।",
+        "9. किं विषम्? गुरुषु अवधीरणा॥"
+      ]
+    },
+    {
+      "sloka_number": 5,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 10, "text": "किं संसारे सारं" },
+            { "type": "utharam", "number": 10, "text": "बहुशोऽपि विचिन्त्यमानमिदमेव ।" }        
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 11, "text": "किं मनुजेष्विष्टतमं" },
+            { "type": "utharam", "number": 11, "text": "स्वपरहितायोद्यतं जन्म ॥" }          
+          ]
+        }
+      ],
+      "anvaya": [
+        "10. अपि संसारे सारं किम्? इदम् एव बहुशः विचिन्त्यमानम् ।",
+        "11. मनुजेषु इष्टतमं किम्? स्व-पर-हिताय-उद्यतं जन्म ।"
+      ]
+    },
+    {
+      "sloka_number": 6,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 12, "text": "मदिरेव मोहजनकः कः" },
+            { "type": "utharam", "number": 12, "text": "स्नेहः" },        
+            { "type": "prasna", "number": 13, "text": "के च दस्यवो" },
+            { "type": "utharam", "number": 13, "text": "विषयाः ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 14, "text": "का भववल्ली" },
+            { "type": "utharam", "number": 14, "text": "तृष्णा" },
+            { "type": "prasna", "number": 15, "text": "को वैरी" },
+            { "type": "utharam", "number": 15, "text": "यस्त्वनुद्योगः ॥" }                 
+          ]
+        }
+      ],
+      "anvaya": [
+        "12. मदिरा इव मोहजनकः कः? स्नेहः ।",
+        "13. के दस्यवः?  विषयाः ।",
+        "14. भववल्ली का ? तृष्णा ।",
+        "15. वैरी कः? यः तु अनुद्योगः ।"
+      ]
+    },    
+    {
+      "sloka_number": 7,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 16,
+              "text": "कस्माद्भयमिह"
+            },
+            {
+              "type": "utharam",
+              "number": 16,
+              "text": "मरणात्"
+            },
+            {
+              "type": "prasna",
+              "number": 17,
+              "text": "अन्धादिह को विशिष्यते"
+            },
+            {
+              "type": "utharam",
+              "number": 17,
+              "text": "रागी ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 18,
+              "text": "कः शूरो"
+            },
+            {
+              "type": "utharam",
+              "number": 18,
+              "text": "यो ललनालोचनबाणैर्न च व्यधितः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "16. इह कस्मात् भयम्? मरणात् ।",
+        "17. अपि कः अन्धात् विशिष्यते ? रागी ।",
+        "18. कः शूरः? यः ललना-लोचन-बाणैः न व्यधितः ॥"
+      ]
+    },
+    {
+      "sloka_number": 8,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 19,
+              "text": "पातुं कर्णाञ्जलिभिः किममृतमिह युज्यते"
+            },
+            {
+              "type": "utharam",
+              "number": 19,
+              "text": "सदुपदेशः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 20,
+              "text": "किं गुरुताया मूलं"
+            },
+            {
+              "type": "utharam",
+              "number": 20,
+              "text": "यदेतदप्रार्थनं नाम ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "19. इह कर्णाञ्जलिभिः किम् अमृतं पातुं युज्यते? सदुपदेशः।",
+        "20. गुरुतायाः किं मूलम्? यत्-एतत्-अप्रार्थनं नाम ॥"
+      ]
+    },
+    {
+      "sloka_number": 9,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 21,
+              "text": "किं गहनं"
+            },
+            {
+              "type": "utharam",
+              "number": 21,
+              "text": "स्त्रीचरितं"
+            },
+            {
+              "type": "prasna",
+              "number": 22,
+              "text": "कश्चतुरो"
+            },
+            {
+              "type": "utharam",
+              "number": 22,
+              "text": "यो न खण्डितस्तेन ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 23,
+              "text": "किं दुःखम् "
+            },
+            {
+              "type": "utharam",
+              "number": 23,
+              "text": "अ​सन्तोषः"
+            },
+            {
+              "type": "prasna",
+              "number": 24,
+              "text": "किं लाघवम्"
+            },
+            {
+              "type": "utharam",
+              "number": 24,
+              "text": "अधमतो याच्ञा ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "21. किं गहनम्? स्त्री-चरितम् ।",
+        "22. क: चतुरः? यः तेन न खण्डितः ।",
+        "23. किं दुःखम्? असन्तोषः। ",
+        "24. किं लाघवम्? अधमतः याच्ञा ॥"
+      ]
+    },
+    {
+      "sloka_number": 10,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 25,
+              "text": "किं जीवितम्"
+            },
+            {
+              "type": "utharam",
+              "number": 25,
+              "text": "अनवद्यं"
+            },
+            {
+              "type": "prasna",
+              "number": 26,
+              "text": "किं जाड्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 26,
+              "text": "पाठतोऽप्यनभ्यासः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 27,
+              "text": "को जागर्ति "
+            },
+            {
+              "type": "utharam",
+              "number": 27,
+              "text": "विवेकी"
+            },
+            {
+              "type": "prasna",
+              "number": 28,
+              "text": "का निद्रा"
+            },
+            {
+              "type": "utharam",
+              "number": 28,
+              "text": "मूढता जन्तोः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "25. किं जीवितम्? अनवद्यम् ।",
+        "26. किं जाड्यम् ? पाठतः अपि अनभ्यासः ।",
+        "27. कः जागर्ति ? विवेकी ।",
+        "24.का निद्रा? जन्तोः मूढता ॥"
+      ]
+    },
+    {
+      "sloka_number": 11,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 29,
+              "text": "नलिनीदलगतजलवत्तरलं किं"
+            },
+            {
+              "type": "utharam",
+              "number": 29,
+              "text": "यौवनं धनं चायुः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 30,
+              "text": "कथय पुनः के शशिनः किरणसमाः"
+            },
+            {
+              "type": "utharam",
+              "number": 30,
+              "text": "सज्जना एव ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "29. नलिनीदलगतजलवत्तरलं किम्? यौवनं धनम् आयुः च ।",
+        "30. पुनः कथय के शशिनः किरणसमाः ? सज्जनाः एव॥"
+      ]
+    },
+    {
+      "sloka_number": 12,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 31,
+              "text": "को नरकः"
+            },
+            {
+              "type": "utharam",
+              "number": 31,
+              "text": "परवशता"
+            },
+            {
+              "type": "prasna",
+              "number": 32,
+              "text": "किं सौख्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 32,
+              "text": "सर्वसङ्गविरतिर्या ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 33,
+              "text": "किं साध्यं "
+            },
+            {
+              "type": "utharam",
+              "number": 33,
+              "text": "भूतहितं"
+            },
+            {
+              "type": "prasna",
+              "number": 34,
+              "text": "प्रियं च किं प्राणिनाम्"
+            },
+            {
+              "type": "utharam",
+              "number": 34,
+              "text": "असवः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "31.को नरकः? परवशता।",
+        "32. किं सौख्यम्? सर्वसङ्गविरतिः या ।",
+        "33. किं साध्यम्? भूतहितम् ।",
+        "34. प्राणिनां किं प्रियम् ? असवः॥"
+      ]
+    },
+    {
+      "sloka_number": 13,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 35,
+              "text": "कोऽनर्थफलो"
+            },
+            {
+              "type": "utharam",
+              "number": 35,
+              "text": "मानः"
+            },
+            {
+              "type": "prasna",
+              "number": 36,
+              "text": "का सुखदा"
+            },
+            {
+              "type": "utharam",
+              "number": 36,
+              "text": "साधुजनमैत्री ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 37,
+              "text": "सर्वव्यसनविनाशे को दक्षः"
+            },
+            {
+              "type": "utharam",
+              "number": 37,
+              "text": "सर्वथा त्यागी ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "35. कः अनर्थफलः? मानः।",
+        "36. का सुखदा? साधुजनमैत्री।",
+        "37. कः सर्व-व्यसन-विनाशे दक्षः? सर्वथा त्यागी॥"
+      ]
+    },
+    {
+      "sloka_number": 14,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 38,
+              "text": "किं मरणं"
+            },
+            {
+              "type": "utharam",
+              "number": 38,
+              "text": "मूर्खत्वं"
+            },
+            {
+              "type": "prasna",
+              "number": 39,
+              "text": "किं चानर्घं"
+            },
+            {
+              "type": "utharam",
+              "number": 39,
+              "text": "यदवसरे दत्तम्"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 40,
+              "text": "सर्वव्यसनविनाशे को दक्षः"
+            },
+            {
+              "type": "utharam",
+              "number": 40,
+              "text": "सर्वथा त्यागी ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "38. किं मरणम्? मूर्खत्वम् । ",
+        "39. किम् अनर्घम्? यत् अवसरे दत्तम् ।",
+        "37. किम् आमरणात् शल्यम्? यत् प्रच्छन्नं कृतं पापम्  ॥"
+      ]
+    },
+    {
+      "sloka_number": 15,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 41,
+              "text": "कुत्र विधेयो यत्नो"
+            },
+            {
+              "type": "utharam",
+              "number": 41,
+              "text": " विद्याभ्यासे सदौषधे दाने ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 42,
+              "text": "अवधीरणा क्व कार्या"
+            },
+            {
+              "type": "utharam",
+              "number": 42,
+              "text": "खलपरयोषित्परधनेषु ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "41. कुत्र यत्नः विधेयः ? विद्याभ्यासे सत्-औषधे दाने ।",
+        "42. अवधीरणा क्व कार्या? खल-परयोषित्-परधनेषु ॥"
+      ]
+    },
+    {
+      "sloka_number": 16,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 43,
+              "text": "काऽहर्निशमनुचिन्त्या"
+            },
+            {
+              "type": "utharam",
+              "number": 43,
+              "text": "संसारासारता न तु प्रमदा ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 44,
+              "text": "का प्रेयसी विधेया"
+            },
+            {
+              "type": "utharam",
+              "number": 44,
+              "text": "करुणा दीनेषु सज्जने मैत्री ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "43. का अहर्निशम् अनुचिन्त्या? संसार-असारता न तु प्रमदा।",
+        "44. का प्रेयसी विधेया? दीनेषु करुणा, सज्जने मैत्री॥"
+      ]
+    },
+    {
+      "sloka_number": 17,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 45,
+              "text": "कण्ठगतैरप्यसुभिः कस्य ह्यात्मा न शक्यते जेतुम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "utharam",
+              "number": 45,
+              "text": "मूर्खस्य शङ्कितस्य च विषादिनो वा कृतघ्नस्य ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "45. असुभिः कण्ठगतैः अपि कस्य आत्मा जेतुं  न शक्यते? मूर्खस्य शङ्कितस्य विषादिनः वा कृतघ्नस्य हि॥"
+      ]
+    },
+    {
+      "sloka_number": 18,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 46,
+              "text": "कः साधुः"
+            },
+            {
+              "type": "utharam",
+              "number": 46,
+              "text": "सद्वृत्तः"
+            },
+            {
+              "type": "prasna",
+              "number": 47,
+              "text": "कमधममाचक्षते"
+            },
+            {
+              "type": "utharam",
+              "number": 47,
+              "text": "त्वसद्वृत्तम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 48,
+              "text": "केन जितं जगदेतत्"
+            },
+            {
+              "type": "utharam",
+              "number": 48,
+              "text": "सत्यतितिक्षावता पुंसा ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "46. कः साधुः? सद्वृत्तः ।",
+        "47. कम् अधमम् आचक्षते ? तु असत्-वृत्तं ।",
+        "48. एतत् जगत् केन जितम् ? सत्य-तितिक्षावता पुंसा  ॥"
+      ]
+    },
+    {
+      "sloka_number": 19,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 49,
+              "text": "कस्मै नमांसि देवाः कुर्वन्ति "
+            },
+            {
+              "type": "utharam",
+              "number": 49,
+              "text": "दयाप्रधानाय ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 50,
+              "text": "कस्मादुद्वेगः स्यात्"
+            },
+            {
+              "type": "utharam",
+              "number": 50,
+              "text": "संसारारण्यतः सुधियः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "49. देवाः कस्मै नमांसि कुर्वन्ति? दयाप्रधानाय ।",
+        "50. सुधियः कस्मात् उद्वेगः स्यात्? संसार-अरण्यतः ॥"
+      ]
+    },
+    {
+      "sloka_number": 20,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 51,
+              "text": "कस्य वशे प्राणिगणः"
+            },
+            {
+              "type": "utharam",
+              "number": 51,
+              "text": "सत्यप्रियभाषिणो विनीतस्य ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 52,
+              "text": "क्व स्थातव्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 52,
+              "text": " न्याय्ये पथि दृष्टादृष्टलाभाढ्ये ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "51. कस्य वशे प्राणिगणः ? सत्य-प्रिय-भाषिणः विनीतस्य । ",
+        "52. क्व स्थातव्यम्? दृष्टादृष्टलाभाढ्ये न्याय्ये पथि॥"
+      ]
+    },
+    {
+      "sloka_number": 21,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 53,
+              "text": "कोऽन्धो"
+            },
+            {
+              "type": "utharam",
+              "number": 53,
+              "text": "योऽकार्यरतः"
+            },
+            {
+              "type": "prasna",
+              "number": 54,
+              "text": "को बधिरो"
+            },
+            {
+              "type": "utharam",
+              "number": 54,
+              "text": "यो हितानि न श्रुणोति ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 55,
+              "text": "को मूको"
+            },
+            {
+              "type": "utharam",
+              "number": 55,
+              "text": "यः काले प्रियाणि वक्तुं न जानाति ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "53. कः अन्धः? यः अकार्यरतः ।",
+        "54. कः बधिरः? यः हितानि न श्रुणोति ।",
+        "55. कः मूकः? यः काले प्रियाणि वक्तुं न जानाति॥"
+      ]
+    },
+    {
+      "sloka_number": 22,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 56,
+              "text": "किं दानम् "
+            },
+            {
+              "type": "utharam",
+              "number": 56,
+              "text": "अनाकाङ्क्षं"
+            },
+            {
+              "type": "prasna",
+              "number": 57,
+              "text": "किं मित्रं"
+            },
+            {
+              "type": "utharam",
+              "number": 57,
+              "text": "यो निवारयति पापात् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 58,
+              "text": "कोऽलङ्कारः "
+            },
+            {
+              "type": "utharam",
+              "number": 58,
+              "text": "शीलं "
+            },
+            {
+              "type": "prasna",
+              "number": 59,
+              "text": "किं वाचां मण्डनं "
+            },
+            {
+              "type": "utharam",
+              "number": 59,
+              "text": "सत्यम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "56. किं दानम्? अनाकाङ्क्षम् ।",
+        "57. किं मित्रम्? यः पापात् निवारयति ।",
+        "58. कः अलङ्कारः? शीलम् ।",
+        "59. किं वाचां मण्डनम्? सत्यम्॥"
+      ]
+    },
+    {
+      "sloka_number": 23,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 12, "text": "विद्युद्विलसितचपलं किं" },
+            { "type": "utharam", "number": 12, "text": "दुर्जनसङ्गतिर्युवतयश्च ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 14, "text": "कुलशीलनिष्प्रकम्पाः के कलिकालेऽपि" },
+            { "type": "utharam", "number": 14, "text": "सज्जना एव ॥" }               
+          ]
+        }
+      ],
+      "anvaya": [
+        "12. किं विद्युत्-विलसित-चपलम्? दुर्जनसङ्गतिः युवतयः च ।",
+        "13. कुल-शील-निष्प्रकम्पाः?  सज्जनाः एव ।"
+      ]
+    },    
+    {
+      "sloka_number": 24,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 62,
+              "text": "चिन्तामणिरिव दुर्लभमिह किं"
+            },
+            {
+              "type": "utharam",
+              "number": 62,
+              "text": "कथयामि तच्चतुर्भद्रम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 63,
+              "text": "किं तद्वदन्ति भूयो विधुततमसो विशेषेण ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "62. इह किं चिन्तामणिः इव दुर्लभम्? तत् कथयामि - चतुर्भद्रम् ।",
+        "63. भूयः विधुत-तमसः विशेषेण किं तत् वदन्ति ?"
+      ]
+    },
+    {
+      "sloka_number": 25,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "utharam",
+              "number": 63,
+              "text": "दानं प्रियवाक्सहितं ज्ञानमगर्वं क्षमान्वितं शौर्यम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "utharam",
+              "number": 63,
+              "text": "वित्तं त्यागसमेतं दुर्लभमेतच्चतुर्भद्रम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "63. प्रिय-वाक्-सहितं दानम्, अगर्वं ज्ञानं, क्षमान्वितं शौर्यं, त्यागसमेतं वित्तं - एतत् चतुर्भद्रं दुर्लभम् ॥"
+      ]
+    },
+    {
+      "sloka_number": 26,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 64,
+              "text": "किं शोच्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 64,
+              "text": "कार्पण्यं सति विभवे"
+            },
+            {
+              "type": "prasna",
+              "number": 65,
+              "text": "किं प्रशस्तम्"
+            },
+            {
+              "type": "utharam",
+              "number": 66,
+              "text": "औदार्यम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 66,
+              "text": "कः पूज्यो विद्वद्भिः"
+            },
+            {
+              "type": "utharam",
+              "number": 66,
+              "text": "स्वभावतः सर्वदा विनीतो यः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "64. किं शोच्यम्? विभवे सति कार्पण्यम् ।",
+        "65. किं प्रशस्तम्? औदार्यम् ।",
+        "66. कः विद्वद्भिः पूज्यः?  यः स्वभावतः सर्वदा विनीतः ॥"
+      ]
+    },
+    {
+      "sloka_number": 27,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 67,
+              "text": "कः कुलकमलदिनेशः"
+            },
+            {
+              "type": "utharam",
+              "number": 67,
+              "text": "सति गुणविभवेऽपि यो नम्रः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 68,
+              "text": "कस्य वशे जगदेतत्"
+            },
+            {
+              "type": "utharam",
+              "number": 68,
+              "text": "प्रियहितवचनस्य धर्मनिरतस्य ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "67. कः कुलकमलदिनेशः? गुणविभवे सति यः नम्रः अपि ।",
+        "68. एतत् जगत् कस्य वशे? प्रियहितवचनस्य धर्मनिरतस्य ॥"
+      ]
+    },
+    {
+      "sloka_number": 28,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 69,
+              "text": "विद्वन्मनोहरा का"
+            },
+            {
+              "type": "utharam",
+              "number": 69,
+              "text": "सत्कविता बोधवनिता च ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 70,
+              "text": "कं न स्पृशति विपत्तिः"
+            },
+            {
+              "type": "utharam",
+              "number": 70,
+              "text": "प्रवृद्धवचनानुवर्तिनं दान्तम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "69. का विद्वन् मनोहरा? सत्कविता बोधवनिता च ।",
+        "70. कं विपत्तिः न स्पृशति? प्रवृद्धवचनानुवर्तिनं दान्तम् ॥"
+      ]
+    },
+    {
+      "sloka_number": 29,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 71,
+              "text": "कस्मै स्पृहयति कमला"
+            },
+            {
+              "type": "utharam",
+              "number": 71,
+              "text": "त्वनलसचित्ताय नीतिवृत्ताय ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 72,
+              "text": "त्यजति च कं सहसा"
+            },
+            {
+              "type": "utharam",
+              "number": 72,
+              "text": "द्विजगुरुसुरनिन्दाकरं च सालस्यम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "71. कमला कस्मै स्पृहयति? तु अनलसचित्ताय नीतिवृत्ताय ।",
+        "72. कं सहसा त्यजति?  द्विज-गुरु-सुर-निन्दाकरं  सालस्यं च ॥"
+      ]
+    },
+    {
+      "sloka_number": 30,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 73,
+              "text": "कुत्र विधेयो वासः"
+            },
+            {
+              "type": "utharam",
+              "number": 73,
+              "text": "सज्जननिकटेऽथवा काश्याम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 74,
+              "text": "कः परिहार्यो देशः"
+            },
+            {
+              "type": "utharam",
+              "number": 74,
+              "text": "पिशुनयुतो लुब्धभूपश्च ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "73. कुत्र वासः विधेयः? सज्जननिकटे अथवा काश्याम् ।",
+        "74. कः परिहार्यः देशः? पिशुनयुतः लुब्धभूपश्च ॥"
+      ]
+    },
+    {
+      "sloka_number": 31,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 75,
+              "text": "केनाशोच्यः पुरुषः"
+            },
+            {
+              "type": "utharam",
+              "number": 75,
+              "text": "प्रणतकलत्रेण धीरविभवेन ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 76,
+              "text": "इह भुवने कः शोच्यः"
+            },
+            {
+              "type": "utharam",
+              "number": 76,
+              "text": "सत्यपि विभवे न यो दाता ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "75. पुरुषः केन अशोच्यः? प्रणतकलत्रेण धीरविभवे।",
+        "76. इह भुवने कः शोच्यः? यः विभवे सति अपि न दाता ॥"
+      ]
+    },
+    {
+      "sloka_number": 32,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 77,
+              "text": "किं लघुताया मूलं"
+            },
+            {
+              "type": "utharam",
+              "number": 77,
+              "text": "प्राकृतपुरुषेषु या याच्ञा ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 78,
+              "text": "रामादपि कः शूरः"
+            },
+            {
+              "type": "utharam",
+              "number": 78,
+              "text": "स्मरशरनिहतो न यश्चलति ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "77. किं लघुतायाः मूलम् ? प्राकृतपुरुषेषु या याच्ञा ।",
+        "78. कः रामात् अपि शूरः? यः स्मरशरनिहतः न चलति॥"
+      ]
+    },
+    {
+      "sloka_number": 33,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 79,
+              "text": "किमहर्निशमनुचिन्त्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 79,
+              "text": "भगवच्चरणं न संसारः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 80,
+              "text": "चक्षुष्मन्तोऽप्यन्धाः के स्युः"
+            },
+            {
+              "type": "utharam",
+              "number": 80,
+              "text": "ये नास्तिका मनुजाः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "79. किम् अहर्निशम् अनुचिन्त्यम्? भगवत् चरणं, न संसारः ।",
+        "80. के चक्षुष्मन्तः अपि अन्धाः स्युः? ये  मनुजाः नास्तिकाः ॥"
+      ]
+    },
+    {
+      "sloka_number": 34,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 81,
+              "text": "कः पङ्गुरिह"
+            },
+            {
+              "type": "utharam",
+              "number": 81,
+              "text": "प्रथितो व्रजति च यो वार्द्धके तीर्थम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 82,
+              "text": "किं तीर्थमपि च"
+            },
+            {
+              "type": "utharam",
+              "number": 82,
+              "text": "मुख्यं चित्तमलं यन्निवर्तयति ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "81. इह कः पङ्गुः? यः प्रथितः वार्द्धके तीर्थं व्रजति।",
+        "82. अपि किं तीर्थम्? यत् मुख्यं चित्तमलं निवर्तयति ॥"
+      ]
+    },
+    {
+      "sloka_number": 35,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 83,
+              "text": "किं स्मर्त्तव्यं पुरुषैः"
+            },
+            {
+              "type": "utharam",
+              "number": 83,
+              "text": "हरिनाम सदा न यावनी भाषा ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 84,
+              "text": "को हि न वाच्यः सुधिया"
+            },
+            {
+              "type": "utharam",
+              "number": 84,
+              "text": "परदोषश्चानृतं तद्वत् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "83. पुरुषैः किं स्मर्त्तव्यम्? सदा हरिनाम, न यावनी भाषा ",
+        "84. सुधिया कः न वाच्यः? परदोषः तद्वत् अनृतं च ॥"
+      ]
+    },
+    {
+      "sloka_number": 36,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 85,
+              "text": "किं सम्पाद्यं मनुजैः"
+            },
+            {
+              "type": "utharam",
+              "number": 85,
+              "text": "विद्या वित्तं बलं यशः पुण्यम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 86,
+              "text": "कः सर्वगुणविनाशी"
+            },
+            {
+              "type": "utharam",
+              "number": 86,
+              "text": "लोभः"
+            },
+            {
+              "type": "prasna",
+              "number": 87,
+              "text": "शत्रुश्च कः"
+            },
+            {
+              "type": "utharam",
+              "number": 88,
+              "text": "कामः"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "85. मनुजैः सम्पाद्यं किम्? विद्या वित्तं बलं यशः पुण्यम् ।",
+        "86. सर्वगुणविनाशी कः? लोभः।",
+        "87. सर्वगुणविनाशी कः? लोभः। शत्रुः कः? कामः॥"
+      ]
+    },
+    {
+      "sloka_number": 37,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 88,
+              "text": "का च सभा परिहार्या"
+            },
+            {
+              "type": "utharam",
+              "number": 88,
+              "text": "हीना या वृद्धसचिवेन ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 89,
+              "text": "इह कुत्रावहितः स्यान्मनुजः"
+            },
+            {
+              "type": "utharam",
+              "number": 89,
+              "text": "किल राजसेवायाम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "88. का परिहार्या सभा ? या वृद्धसचिवेन हीना॥ ",
+        "89. इह कुत्र मनुजः अवहितः स्यात्? राजसेवायां किल॥ ॥"
+      ]
+    },
+    {
+      "sloka_number": 38,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 90,
+              "text": "प्राणादपि को रम्यः"
+            },
+            {
+              "type": "utharam",
+              "number": 90,
+              "text": "कुलधर्मः साधुसङ्गश्च ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 91,
+              "text": "का संरक्ष्या"
+            },
+            {
+              "type": "utharam",
+              "number": 91,
+              "text": "कीर्तिः पतिव्रता नैजबुद्धिश्च ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "90. कः प्राणात् अपि रम्यः? कुलधर्मः साधुसङ्गः च ।",
+        "91. का संरक्ष्या? कीर्तिः पतिव्रता नैजबुद्धिः च॥"
+      ]
+    },
+    {
+      "sloka_number": 39,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 92,
+              "text": "का कल्पलता लोके"
+            },
+            {
+              "type": "utharam",
+              "number": 92,
+              "text": "सच्छिष्यायार्पिता विद्या ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 93,
+              "text": "कोऽक्षयवटवृक्षः स्यात्"
+            },
+            {
+              "type": "utharam",
+              "number": 93,
+              "text": "विधिवत्सत्पात्रदत्तदानं यत् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "92. लोके का कल्पलता? सच्छिष्याय अर्पिता विद्या ।",
+        "93. कः अक्षयवटवृक्षः स्यात्? यत् विधिवत् सत्पात्रदत्तदानम्॥"
+      ]
+    },
+    {
+      "sloka_number": 40,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 94,
+              "text": "किं शास्त्रं"
+            },
+            {
+              "type": "utharam",
+              "number": 94,
+              "text": "सर्वेषां युक्तिः"
+            },
+            {
+              "type": "prasna",
+              "number": 95,
+              "text": "माता च का"
+            },
+            {
+              "type": "utharam",
+              "number": 95,
+              "text": "धेनुः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 96,
+              "text": "किं नु बलं"
+            },
+            {
+              "type": "utharam",
+              "number": 96,
+              "text": "यद्धैर्यं"
+            },
+            {
+              "type": "prasna",
+              "number": 97,
+              "text": "को मृत्युः"
+            },
+            {
+              "type": "utharam",
+              "number": 97,
+              "text": "यदवधानरहितत्वम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "92. किं शास्त्रम्? सर्वेषां युक्तिः।",
+        "93. का माता? धेनुः।",
+        "नु किं बलम्? धैर्यं यत्।",
+        "कः मृत्युः? यत् अवधानरहितत्वम् ॥"
+      ]
+    },
+    {
+      "sloka_number": 41,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 98,
+              "text": "कुत्र विषं"
+            },
+            {
+              "type": "utharam",
+              "number": 98,
+              "text": "दुष्टजने"
+            },
+            {
+              "type": "prasna",
+              "number": 99,
+              "text": "किमिहाशौचं भवेत्"
+            },
+            {
+              "type": "utharam",
+              "number": 99,
+              "text": "ऋणं नृणाम् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 100,
+              "text": "किमभयमिह"
+            },
+            {
+              "type": "utharam",
+              "number": 100,
+              "text": "वैराग्यं"
+            },
+            {
+              "type": "prasna",
+              "number": 101,
+              "text": "भयमपि किं"
+            },
+            {
+              "type": "utharam",
+              "number": 101,
+              "text": "वित्तमेव सर्वेषाम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "98. विषं कुत्र? दुष्टजने ।",
+        "99. इह किम् अशौचं भवेत् ?  नृणां ऋणम् ।",
+        "100. इह किम् अभयम्?  वैराग्यम्। ",
+        "101. अपि किं भयम्? सर्वेषां वित्तम् एव॥"
+      ]
+    },
+    {
+      "sloka_number": 42,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 102,
+              "text": "का दुर्लभा नराणां"
+            },
+            {
+              "type": "utharam",
+              "number": 102,
+              "text": "हरिभक्तिः"
+            },
+            {
+              "type": "prasna",
+              "number": 103,
+              "text": "पातकं च किं"
+            },
+            {
+              "type": "utharam",
+              "number": 103,
+              "text": "हिंसा ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 104,
+              "text": "को हि भगवत्प्रियः स्यात्"
+            },
+            {
+              "type": "utharam",
+              "number": 104,
+              "text": "योऽन्यं नोद्वेजयेदनुद्विग्नः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "102. नराणां का दुर्लभा? हरिभक्तिः।",
+        "103. किं पातकम्? हिंसा ।",
+        "104. कः भगवत्प्रियः स्यात्? यः अन्यं न उद्वेजयेत्, अनुद्विग्नः ॥"
+      ]
+    },
+    {
+      "sloka_number": 43,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 105,
+              "text": "कस्मात् सिद्धिः"
+            },
+            {
+              "type": "utharam",
+              "number": 106,
+              "text": "तपसः"
+            },
+            {
+              "type": "prasna",
+              "number": 107,
+              "text": "बुद्धिः क्व नु "
+            },
+            {
+              "type": "utharam",
+              "number": 108,
+              "text": "भूसुरे"
+            },
+            {
+              "type": "prasna",
+              "number": 109,
+              "text": "कुतो बुद्धिः ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "utharam",
+              "number": 109,
+              "text": "वृद्धोपसेवया"
+            },
+            {
+              "type": "prasna",
+              "number": 110,
+              "text": "के वृद्धा"
+            },
+            {
+              "type": "utharam",
+              "number": 110,
+              "text": "ये धर्मतत्त्वज्ञाः ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "105. विषं कुत्र? दुष्टजने ।",
+        "106. इह किम् अशौचं भवेत् ?  नृणां ऋणम् ।",
+        "107. इह किम् अभयम्?  वैराग्यम्। "
+      ]
+    },
+    {
+      "sloka_number": 44,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 105,
+              "text": "सम्भावितस्य मरणादधिकं किं"
+            },
+            {
+              "type": "utharam",
+              "number": 106,
+              "text": "दुर्यशो भवति ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 107,
+              "text": "लोके सुखी भवेत्को"
+            },
+            {
+              "type": "utharam",
+              "number": 108,
+              "text": "धनवान्"
+            },
+            {
+              "type": "prasna",
+              "number": 110,
+              "text": "धनमपि च किं"
+            },
+            {
+              "type": "utharam",
+              "number": 110,
+              "text": "यतश्चेष्टम् ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "105. सम्भावितस्य किं मरणात् अधिकम्? दुर्यशः भवति।",
+        "106. इह किम् अशौचं भवेत् ?  नृणां ऋणम् ।",
+        "107. अपि किं धनम्? यत् इष्टं च ॥"
+      ]
+    },
+    {
+      "sloka_number": 45,
+      "sloka": [
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 112,
+              "text": "सर्वसुखानां बीजं किं"
+            },
+            {
+              "type": "utharam",
+              "number": 112,
+              "text": "पुण्यं"
+            },
+            {
+              "type": "prasna",
+              "number": 113,
+              "text": "दुःखमपि कुतः"
+            },
+            {
+              "type": "utharam",
+              "number": 113,
+              "text": "पापात् ।"
+            }
+          ]
+        },
+        {
+          "line_parts": [
+            {
+              "type": "prasna",
+              "number": 114,
+              "text": "कस्यैश्वर्यं"
+            },
+            {
+              "type": "utharam",
+              "number": 114,
+              "text": "यः किल शङ्करमाराधयेद्भक्त्या ॥"
+            }
+          ]
+        }
+      ],
+      "anvaya": [
+        "105. किं सर्वसुखानां बीजम्? पुण्यम्।",
+        "106. अपि कुतः दुःखम्? पापात् ।",
+        "107. कस्य ऐश्वर्यं ? यः शङ्करम् भक्त्या आराधयेत् किल ॥"
+      ]
+    },
+
+    {
+      "sloka_number": 46,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 115, "text": "को वर्द्धते" },
+            { "type": "utharam", "number": 115, "text": "विनीतः" },
+            { "type": "prasna", "number": 116, "text": "को वा हीयेत" },
+            { "type": "utharam", "number": 116, "text": "यो दृप्तः ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 117, "text": "को न प्रत्येतव्यो" },
+            { "type": "utharam", "number": 117, "text": "ब्रूते यश्चानृतं शश्वत् ॥" }
+          ]
+        }
+      ],
+      "anvaya": [
+        "115. कः वर्द्धते? विनीतः।",
+        "116. कः हीयेत ? यः दृप्तः।",
+        "117. कः न प्रत्येतव्यः?  यः शश्वत् अनृतं ब्रूते ॥"
+      ]
+    },
+    {
+      "sloka_number": 47,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 118, "text": "कुत्रानृतेऽप्यपापं" },
+            { "type": "utharam", "number": 118, "text": "यच्चोक्तं धर्मरक्षार्थम् ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 119, "text": "को धर्मः" },
+            { "type": "utharam", "number": 119, "text": "अभिमतो यः शिष्टानां निजकुलीनानाम् ॥" }
+          ]
+        }
+      ],
+      "anvaya": [
+        "118. कुत्र अनृते अपि अपापम्? यत् धर्मरक्षार्थम् उक्तम् ।",
+        "119. कः धर्मः? यः शिष्टानां निजकुलीनानाम् अभिमतः॥"
+      ]
+    },
+    {
+      "sloka_number": 48,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 120, "text": "साधुबलं किं" },
+            { "type": "utharam", "number": 120, "text": "दैवं" },
+            { "type": "prasna", "number": 121, "text": "कः साधुः" },
+            { "type": "utharam", "number": 121, "text": "सर्वदा तुष्टः ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 122, "text": "दैवं किं" },
+            { "type": "utharam", "number": 122, "text": "यत्सुकृतं" },
+            { "type": "prasna", "number": 123, "text": "कः सुकृती" },
+            { "type": "utharam", "number": 123, "text": "श्लाघ्यते च यः सद्भिः ॥" }
+          ]
+        }
+      ],
+      "anvaya": [
+        "121. किं साधुबलम्? दैवम्।",
+        "122. कः साधुः? सर्वदा तुष्टः ।",
+        "123. किं दैवम्? यत् सुकृतम्।",
+        "124. कः सुकृती? यः सद्भिः श्लाघ्यते॥"      
+      ]
+    },
+    {
+      "sloka_number": 49,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 124, "text": "गृहमेधिनश्च मित्रं किं" },
+            { "type": "utharam", "number": 124, "text": "भार्या" },
+            { "type": "prasna", "number": 125, "text": "को गृही च" },
+            { "type": "utharam", "number": 125, "text": "यो यजते ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 126, "text": "को यज्ञो" },
+            { "type": "utharam", "number": 126, "text": "यः श्रुत्या विहितः श्रेयस्करो नृणाम् ॥" }
+          ]
+        }
+      ],
+      "anvaya": [
+        "124. गृहमेधिनः मित्रम् किं? भार्या।",
+        "125. कः गृही? यः यजते।",
+        "126. कः यज्ञः? यः श्रुत्या विहितः नृणां श्रेयस्करः ॥"     
+      ]
+    },
+    {
+      "sloka_number": 50,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 127, "text": "कस्य क्रिया हि सफला" },
+            { "type": "utharam", "number": 127, "text": "यः पुनराचारवान् शिष्टः ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 128, "text": "कः शिष्टो" },
+            { "type": "utharam", "number": 128, "text": "यो वेदप्रमाणवान्"},
+            { "type": "prasna", "number": 129, "text": "को हतः" },
+            { "type": "utharam", "number": 129, "text": "क्रियाभ्रष्टः ॥"}          
+          ]
+        }
+      ],
+      "anvaya": [
+        "127. कस्य क्रिया सफला? यः पुनराचारवान् शिष्टः ।",
+        "128. कः शिष्टः? यो वेदप्रमाणवान्।",
+        "129. कः हतः? क्रियाभ्रष्टः ॥"     
+      ]
+    },
+    {
+      "sloka_number": 51,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 130, "text": "को धन्यः" },
+            { "type": "utharam", "number": 130, "text": "संन्यासी"},
+            { "type": "prasna", "number": 131, "text": "को मान्यः" },
+            { "type": "utharam", "number": 131, "text": "पण्डितः साधुः ।"}          
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 132, "text": "कः सेव्यो" },
+            { "type": "utharam", "number": 132, "text": "यो दाता"},
+            { "type": "prasna", "number": 133, "text": "को दाता" },
+            { "type": "utharam", "number": 133, "text": "योऽर्थितृप्तिमातनुते ॥"}          
+          ]
+        }
+      ],
+      "anvaya": [
+        "130. कः धन्यः? संन्यासी ।",
+        "131. कः मान्यः? साधुः पण्डितः ।",
+        "132. कः सेव्यः? यः दाता ।",
+        "133. कः दाता? यः अर्थितृप्तिम् आतनुते ।"     
+      ]
+    },
+    {
+      "sloka_number": 52,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 134, "text": "किं भाग्यं देहवताम्" },
+            { "type": "utharam", "number": 134, "text": "आरोग्यं"},
+            { "type": "prasna", "number": 135, "text": "कः फली" },
+            { "type": "utharam", "number": 135, "text": "कृषिकृत् ।"}          
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 136, "text": "कस्य न पापं" },
+            { "type": "utharam", "number": 136, "text": "जपतः"},
+            { "type": "prasna", "number": 137, "text": "कः पूर्णो" },
+            { "type": "utharam", "number": 137, "text": "यः प्रजावान् स्यात् ॥"}          
+          ]
+        }
+      ],
+      "anvaya": [
+        "134. देहवतां किं भाग्यम्? आरोग्यम्।",
+        "135. कः फली? कृषिकृत् ।",
+        "136. कस्य न पापम्? जपतः।",
+        "137. कः पूर्णः? यः प्रजावान् स्यात् ॥"     
+      ]
+    },
+    {
+      "sloka_number": 53,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 138, "text": "किं दुष्करं नराणां" },
+            { "type": "utharam", "number": 138, "text": "यन्मनसो निग्रहः सततम् ।"}       
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 139, "text": "को ब्रह्मचर्यवांस्यात्" },
+            { "type": "utharam", "number": 139, "text": "यश्चास्खलितोर्ध्वरेतस्कः ॥"}         
+          ]
+        }
+      ],
+      "anvaya": [
+        "138. नराणां किं दुष्करम्?  यत् सततं मनसः निग्रहः ।",
+        "139. कः ब्रह्मचर्यवान् स्यात्? यः अस्खलितः ऊर्ध्वरेतस्कः ॥"  
+      ]
+    },
+    {
+      "sloka_number": 54,
+      "sloka": [
+        {
+          "line_parts": [
+            { "type": "prasna", "number": 140, "text": "का च परदेवतोक्ता" },
+            { "type": "utharam", "number": 140, "text": "चिच्छक्तिः"},
+            { "type": "prasna", "number": 141, "text": "को जगद्भर्ता ।" }
+          ]
+        },
+        {
+          "line_parts": [
+            { "type": "utharam", "number": 141, "text": "सूर्यः"},
+            { "type": "prasna", "number": 142, "text": "सर्वेषां को जीवनहेतुः" },
+            { "type": "utharam", "number": 142, "text": "स पर्जन्यः ॥"}         
+          ]
+        }
+      ],
+      "anvaya": [
+        "140. का परदेवता उक्ता? चित्-शक्तिः।",
+        "141. कः जगत्-भर्ता ? सूर्यः।",
+        "142. सर्वेषां कः जीवनहेतुः? सः पर्जन्यः ॥"
+        
+      ]
+    },
+    {
+        "sloka_number": 55,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 143, "text": "कः शूरो" },
+              { "type": "utharam", "number": 143, "text": "यो भीतत्राता" },
+              { "type": "prasna", "number": 144, "text": "त्राता च कः" },
+              { "type": "utharam", "number": 144, "text": "सद्गुरुः ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 145, "text": "को हि जगद्गुरुरुक्तः" },
+              { "type": "utharam", "number": 145, "text": "शम्भुः" },
+              { "type": "prasna", "number": 146, "text": "ज्ञानं कुतः" },
+              { "type": "utharam", "number": 146, "text": "शिवादेव ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "143. कः शूरः? यः भीतत्राता।",
+          "144. कः त्राता? सद्गुरुः।",
+          "145. कः जगद्गुरुः उक्तः? शम्भुः।",
+          "146. कुतः ज्ञानम्? शिवात् एव ।"
+        ]
+    },
+    {
+        "sloka_number": 56,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 147, "text": "मुक्तिं लभेत कस्मात्" },
+              { "type": "utharam", "number": 147, "text": "मुकुन्दभक्तेः" },
+              { "type": "prasna", "number": 148, "text": "मुकुन्दः कः ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "utharam", "number": 148, "text": "यस्तारयेदविद्यां" },
+              { "type": "prasna", "number": 149, "text": "का चाविद्या" },
+              { "type": "utharam", "number": 149, "text": "यदात्मनोऽस्फूर्तिः ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "147. कस्मात् मुक्तिं लभेत? मुकुन्दभक्तेः।",
+          "148. मुकुन्दः कः? यः अविद्यां तारयेत्।",
+          "149. का अविद्या? यत् आत्मनः अस्फूर्तिः ।"
+        ]
+    },
+    {
+        "sloka_number": 57,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 150, "text": "कस्य न शोको" },
+              { "type": "utharam", "number": 150, "text": "यः स्यादक्रोधः" },
+              { "type": "prasna", "number": 151, "text": "किं सुखं" },
+              { "type": "utharam", "number": 151, "text": "तुष्टिः ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 152, "text": "को राजा" },
+              { "type": "utharam", "number": 152, "text": "रञ्जनकृत्" },
+              { "type": "prasna", "number": 153, "text": "कश्च श्वा" },
+              { "type": "utharam", "number": 153, "text": "नीचसेवको यः स्यात् ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "147. कस्य न शोकः? यः अक्रोधः स्यात् ।",
+          "148. किं सुखम्? तुष्टिः ।",
+          "149. कः राजा? रञ्जनकृत्।",
+          "150. कः श्वा? यः नीचसेवकः स्यात् ।"
+        ]
+    },
+    {
+        "sloka_number": 58,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 150, "text": "को मायी" },
+              { "type": "utharam", "number": 150, "text": "परमेशः" },
+              { "type": "prasna", "number": 151, "text": "क इन्द्रजालायते" },
+              { "type": "utharam", "number": 151, "text": "प्रपञ्चोऽयम् ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 152, "text": "कः स्वप्ननिभो" },
+              { "type": "utharam", "number": 152, "text": "जाग्रद्व्यवहारः" },
+              { "type": "prasna", "number": 153, "text": "सत्यमपि च किं" },
+              { "type": "utharam", "number": 153, "text": "ब्रह्म ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "147. कः मायी? परमेशः।",
+          "148. कः इन्द्रजालायते? अयं प्रपञ्चः ।",
+          "149. कः स्वप्ननिभः? जाग्रत्-व्यवहारः।",
+          "150. अपि  किं सत्यम्? ब्रह्म  ।"
+        ]
+    },
+    {
+        "sloka_number": 59,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 158, "text": "किं मिथ्या" },
+              { "type": "utharam", "number": 158, "text": "यद्विद्यानाश्यं" },
+              { "type": "prasna", "number": 159, "text": "तुच्छं तु" },
+              { "type": "utharam", "number": 159, "text": "शशविषाणादि ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 160, "text": "का चानिर्वाच्या" },
+              { "type": "utharam", "number": 160, "text": "माया" },
+              { "type": "prasna", "number": 161, "text": "किं कल्पितं" },
+              { "type": "utharam", "number": 161, "text": "द्वैतम् ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "158. किं मिथ्या? यत्-विद्या-नाश्यम् ।",
+          "159. तुच्छं तु? शशविषाण-आदि ।",
+          "160. का अनिर्वाच्या? माया ।",
+          "161. किं कल्पितम्? द्वैतम् ।"
+        ]
+    },
+    {
+        "sloka_number": 60,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 162, "text": "किं पारमार्थिकं स्यात्" },
+              { "type": "utharam", "number": 162, "text": "अद्वैतं" },
+              { "type": "prasna", "number": 163, "text": "चाज्ञता कुतः" },
+              { "type": "utharam", "number": 163, "text": "अनादिः ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 164, "text": "वपुषश्च पोषकं किं" },
+              { "type": "utharam", "number": 164, "text": "प्रारब्धं" },
+              { "type": "prasna", "number": 165, "text": "चान्नदायि किं" },
+              { "type": "utharam", "number": 165, "text": "चायुः ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "162. किं पारमार्थिकं स्यात्? अद्वैतम्।",
+          "163. कुतः अज्ञता? अनादिः।",
+          "164. किं वपुषः पोषकम्? प्रारब्धम्।",
+          "165. किं अन्नदायि? आयुः ।"
+        ]
+    },
+    {
+        "sloka_number": 61,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 166, "text": "को ब्राह्मणैरुपास्यो" },
+              { "type": "utharam", "number": 166, "text": "गायत्र्यर्काग्निगोचरः शम्भुः ।" }
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 167, "text": "गायत्र्यामादित्ये चाग्नौ शम्भौ च किं नु" },
+              { "type": "utharam", "number": 167, "text": "तत्तत्त्वम् ॥" }         
+            ]
+          }
+        ],
+        "anvaya": [
+          "166. कः ब्राह्मणैः उपास्यः? गायत्री-अर्क-अग्नि-गोचरः शम्भुः।",
+          "167. किं गायत्र्याम् आदित्ये अग्नौ शम्भौ? तत् तत्त्वम् ॥"
+        ]
+    },
+    {
+        "sloka_number": 62,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 168, "text": "प्रत्यक्षदेवता का" },
+              { "type": "utharam", "number": 168, "text": "माता" },
+              { "type": "prasna", "number": 169, "text": "पूज्यो गुरुश्च कः" },
+              { "type": "utharam", "number": 169, "text": "तातः ।" }          
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 170, "text": "कः सर्वदेवतात्मा" },
+              { "type": "utharam", "number": 170, "text": "विद्याकर्मान्वितो विप्रः ॥" }         
+            ]
+          }
+        ],
+        "anvaya": [
+          "168. का प्रत्यक्षदेवता? माता।",
+          "169. कः पूज्यः गुरुः? तातः।",
+          "170. कः सर्वदेवतात्मा? विद्याकर्मान्वितो विप्रः।"
+        ]
+    },
+    {
+        "sloka_number": 63,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 171, "text": "कश्च कुलक्षयहेतुः" },
+              { "type": "utharam", "number": 171, "text": "सन्तापः सज्जनेषु योऽकारि ।" }          
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 172, "text": "केषाममोघं वचनं" },
+              { "type": "utharam", "number": 172, "text": "ये च पुनः सत्यमौनशमशीलाः ॥" }         
+            ]
+          }
+        ],
+        "anvaya": [
+          "171. कः कुलक्षयहेतुः? यः सज्जनेषु  सन्तापः अकारि ।",
+          "172. केषां  वचनम् अमोघम्? ये पुनः सत्य-मौन-शम-शीलाः ।"
+        ]
+    },
+    {
+        "sloka_number": 64,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 173, "text": "किं जन्म" },
+              { "type": "utharam", "number": 173, "text": "विषयसङ्गः" },
+              { "type": "prasna", "number": 174, "text": "किमुत्तरं जन्म" },
+              { "type": "utharam", "number": 174, "text": "पुत्रः स्यात् ।" }          
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 175, "text": "कोऽपरिहार्यो" },
+              { "type": "utharam", "number": 175, "text": "मृत्युः" },
+              { "type": "prasna", "number": 176, "text": "कुत्र पदं विन्यसेच्च" },
+              { "type": "utharam", "number": 176, "text": "दृक्पूते ॥" }           
+            ]
+          }
+        ],
+        "anvaya": [
+          "173. किं जन्म? विषयसङ्गः ।",
+          "174. किम् उत्तरं जन्म? पुत्रः स्यात् ।",
+          "175. कः अपरिहार्यः? मृत्युः।",
+          "176. कुत्र पदं विन्यसेत्? दृक्पूते ।"
+        ]
+    },
+    {
+        "sloka_number": 65,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 177, "text": "पात्रं किमन्नदाने" },
+              { "type": "utharam", "number": 177, "text": "क्षुधितं" },
+              { "type": "prasna", "number": 178, "text": "कोऽर्च्यो" },
+              { "type": "utharam", "number": 178, "text": "हि भगवदवतारः ।" }          
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 179, "text": "कश्च भगवान्" },
+              { "type": "utharam", "number": 179, "text": "महेशः शङ्करनारायणात्मैकः ॥" }          
+            ]
+          }
+        ],
+        "anvaya": [
+          "177. अन्नदाने किम् पात्रम्? क्षुधितम्।",
+          "178. कः अर्च्यः? भगवत्-अवतारः।",
+          "179. कः भगवान्? शङ्करनारायणात्मा महेशः एकः ।"
+        ]
+    },
+    {
+        "sloka_number": 66,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 180, "text": "फलमपि भगवद्भक्तेः किं" },
+              { "type": "utharam", "number": 180, "text": "तल्लोकस्वरुपसाक्षात्त्वम् ।" }          
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "prasna", "number": 181, "text": "मोक्षश्च को" },
+              { "type": "utharam", "number": 181, "text": "ह्यविद्यास्तमयः" },
+              { "type": "prasna", "number": 182, "text": "कः सर्ववेदभूः " },
+              { "type": "utharam", "number": 182, "text": "अथ च ॐ ॥" }           
+            ]
+          }
+        ],
+        "anvaya": [
+          "180. अपि भगवत्-भक्तेः फलं  किं? तत्-लोक-स्वरुप-साक्षात्त्वम् ।",
+          "181. कः मोक्षः? अविद्या-अस्तमयः । ",
+          "182. कः सर्ववेदभूः?  अथ च ॐ॥"
+        ]
+    },
+    {
+        "sloka_number": 67,
+        "sloka": [
+          {
+            "line_parts": [
+              { "type": "sloka", "text": "इत्येषा कण्ठस्था प्रश्नोत्तररत्नमालिका येषाम् ।" }         
+            ]
+          },
+          {
+            "line_parts": [
+              { "type": "sloka", "text": "ते मुक्ताभरणा इव विमलाश्चाभान्ति सत्समाजेषु ॥" }         
+            ]
+          }
+        ],
+        "anvaya": [
+          "येषाम् एषा प्रश्नोत्तररत्नमालिका कण्ठस्था ते सत्-समाजेषु विमलाः मुक्ताभरणाः इव आभान्ति ।"
+        ]
+    }            
+  
+
+  ]
+}

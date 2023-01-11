@@ -1,0 +1,239 @@
+
+.navbar_background{
+    background-color: rgb(11, 64, 85);
+    color: white;
+}
+
+.card-title-1-first {
+    background-color: rgb(12, 28, 91);
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size: 18pt;
+    text-align: center;
+    color: gold;
+}
+
+.card-title-1 {
+    background-color: rgb(12, 28, 91);
+    padding-top:2px;
+    padding-bottom:2px;
+    font-size: 1rem;
+    text-align: center;
+    color: gold;
+}
+
+.card-body-1 {
+    background-color: skyblue;
+}
+
+.card-footer-1 {
+    background-color:  rgb(11, 64, 85);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    color:chartreuse; position:absolute; text-align: right; 
+    width:100%; padding-right: 30px; margin-top:0px; z-index: 9;
+}
+
+.app-audio {
+    height: 1rem;
+    width: 200px;
+}
+
+.question-div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: red;
+}
+
+
+.answer-div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: blue;
+}
+
+.info-div {
+    font-size: 1rem;
+    margin-left: 2rem; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: brown; 
+}
+
+.options-div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    
+    color: grey;
+
+}
+.option-div {
+    border-radius: 20px;
+    min-width: 50%; max-width: 75%;
+    margin:10px;
+    padding-left: 20px;
+    background-color: lightcyan;
+    border: antiquewhite 1px solid;
+}
+
+.PrasnaText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: red;
+    margin-right: 0.5rem;  
+}
+
+.UtharamText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: blue;  
+    margin-right: 0.5rem;  
+}
+
+.SlokaText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: purple;  
+    margin-right: 0.5rem;   
+}
+
+.sloka-div {
+    margin-left: 2rem; 
+    padding: 0.5rem;    
+}
+
+.sloka-anvaya-div {
+    margin-top: 1rem;
+    margin-left: 2rem;   
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: darkmagenta;
+}
+
+.sloka-meaning-div {
+    margin-top: 1rem;
+    margin-left: 2rem;   
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: darkblue;
+}
+
+.sloka-meaning-select {
+    background-color: inherit;
+    font-size: 0.8 rem;
+    color: inherit;
+}
+
+.sloka_container {
+    font-size: 1.4rem;
+    color: rgb(45, 18, 197);
+}
+
+.test-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    gap: 10%;
+}
+
+.practice-oral-test-container {
+    display: grid;
+    grid-template-columns: repeat(5);
+    padding: 1rem;
+    row-gap: 1rem;
+    column-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.info-grid {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height:1rem;
+    padding: 1rem;
+}
+.qa-grid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1rem;
+}
+.aaudio-grid {
+    padding: 1rem;
+}
+
+.sloka_container_1 {
+        background-color: rgb(86, 43, 226);
+}
+
+.sloka-div-1 {
+    
+    text-align: center;
+    background-color: lightgreen;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    
+}
+
+.sloka-sub-1 {
+    
+    border-radius: 2rem; 
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color:rgb(216, 241, 52);
+    max-width: 60vw;
+}
+
+.q-c-1 {
+    font-size: 1.4rem;
+    color: red;
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ans-c-1 {
+    font-size: 1.4rem;
+    color: blue;
+    text-align: center;
+    background-color: rgb(216, 241, 52);
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.info-div-1{
+    
+    color: maroon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.options-div-1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+    margin-top: 1rem;
+
+}
+
+
