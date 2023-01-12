@@ -1004,10 +1004,12 @@ class PracticeTestDisplay extends BaseDisplay {
             root.appendChild(divele);
             let option_type = myq["options_type"];
             if(option_type == null) option_type = "radio";
+            let chkboxid = "multi-answer-" + x;
 
             let e = document.createElement("input");
             e.setAttribute("name", "multi-answer");
             e.setAttribute("type", option_type);
+            e.id = chkboxid;
  
             e.classList.add("form-check-input", "mb-2");
             let mytext = myq["options"][x]; 
@@ -1017,8 +1019,9 @@ class PracticeTestDisplay extends BaseDisplay {
             let that = this;
             e.onclick = function() {that.mark_answer();}
 
-            let s = document.createElement("span");
-            s.setAttribute("style", "padding-left: 15px;");         
+            let s = document.createElement("label");
+            s.setAttribute("style", "padding-left: 1rem;");
+            s.setAttribute("for",chkboxid);          
             divele.appendChild(s);
             lipiText(s, mytext);
 

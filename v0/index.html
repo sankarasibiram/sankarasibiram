@@ -1,42 +1,48 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
         <script src="js/utils.js"></script>
         <script src="js/grantha_new.js"></script>
         <script src="js/sanscript1.js"></script>
-        <link rel="stylesheet" href="css/app_style.css">
+        <script src="js/swiped-events.js"></script>
+        <link rel="stylesheet" href="css/app_style.css  ">
+        <link rel="stylesheet" href="css/navbar.css">
     
         <title>शङ्करशिबिरम्</title>
+    
 
     </head>
     <body>
 
 
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar_background">
+        <div class="ccontainer-lg">
+            <nav class="navbar navbar-expand-lg navbar-dark  navbar_background main-navigation">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#" onclick="app_display.home();">
-                        <img src="data/prasna/Shri_Shankaracharya.jpg" alt="" width="18" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand order-2 order-lg-1" href="#" onclick="app_display.home();">
+                        <img src="data/prasna/Shri_Shankaracharya.jpg" alt="" width="18" height="24" 
+                        class="d-inline-block align-text-top">
                         शङ्करशिबिरम्
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarScroll">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                            <!--<li class="nav-item">
-                                <a class="nav-link active multi-lipi" aria-current="page" href="#" onclick="app_display.home();">गुरुकुलम्</a>
-                            </li>-->
+
+                    <div class="overlay d-flex d-lg-none"></div>
+
+                    <div class="order-lg-2 d-lg-flex w-100 sidebar pb-3 pb-lg-0 navbar_background">
+
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li id="navbar-learn-dropdown-id" class="nav-item dropdown">
-                                <a id="learn-dropdown-id" class="nav-link dropdown-toggle multi-lipi" 
-                                    href="#" id="navbarScrollingDropdown" role="button"
+                                <a id="learn-dropdown-id" class="nav-link dropdown-toggle multi-lipi" href="#" id="navbarScrollingDropdown" 
+                                role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">अध्ययनम्</a>
                                 <ul id="submenu-learn-dropdown-id" class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 </ul>
@@ -66,13 +72,13 @@
                 <div id="practice-test-card">
                     <div style="position: relative">
                         <div id="timer" class="clock" >120</div>
-                        <div id="grantha-title" class="card-title-1 multi-lipi" >Test Title</div>
+                        <div id="grantha-title" class="card-title-1" >Test Title</div>
                     </div>
 
                     <div class="card-body card-body-1" >
                     
                     <div style="display: flex; align-items: center;justify-content: center;">
-                        <div style="min-width:600px; max-width: 80vw;">
+                        <div sstyle="min-width:600px; max-width: 80vw;">
                             <div id="sloka_container-div" class="sloka_container sloka_container_1">
                                 <div class="container sloka-div-1">
 
@@ -83,22 +89,23 @@
 
                                     <div style="font-size: 1rem; text-align: left; margin-top: 1rem">
 
-                                        <label id="sloka_number_label" class="me-2" ></label>
-                                        <input id="sloka-anvaya-chkbox"  type="checkbox"> 
-                                        <label for="sloka-anvaya-chkbox" class="multi-lipi" style="font-size: 1rem; padding-right: 10px;" id="sloka-include-anvayam-label"> सान्वयम् </label>
+                                        <label id="sloka_number_label" class="mx-2"></label>
+                                        <input id="sloka-anvaya-chkbox" style="font-size: 1rem;" class="lipi-text" type="checkbox" value=""> 
+                                        <label id="sloka-include-anvayam-label" class="me-2"> सान्वयम् </label>
 
-                                        <input id="select-meaning-chkbox"  type="checkbox">                     
-                                        <label id="sloka-include-meaning-label" class="multi-lipi"> सार्थम् </label> 
-                                        <select id="select-meaning-lang" class="nav-item dropdown sloka-meaning-select border-0"></select>
+                                        <input id="select-meaning-chkbox" class="lipi-text" type="checkbox" value="">                     
+                                        <label id="sloka-include-meaning-label" class="me-1"> सार्थम् </label> 
+                                        <select id="select-meaning-lang" class="nav-item dropdown sloka-meaning-select me-2 lipi-text border-0"></select>
                                         
-                                        <input id="sloka-audio-checkbox" type="checkbox" class="ms-0">
-                                        <label class="ms-0 multi-lipi">अनूच्चारणम्</label>
+                                        <input id="sloka-audio-checkbox" type="checkbox">
+                                        <label class="me-2">अनूच्चारणम्</label>
                                         <span class="sloka_audio_home">
                                             <span id="sloka-with-student-audio"></span>
                                             <span id="sloka-audio"></span>
                                         </span>
                                         <input id="select-autoplay-chkbox"  type="checkbox" value="">                     
-                                        <label id="sloka-autoplay-label" class="me-1"> Autoplay </label> 
+                                        <label id="sloka-autoplay-label" class="me-1 multi-lipi">अनुक्रम</label> 
+
                                     </div>
 
                                 </div>
@@ -113,14 +120,10 @@
                     </div>
                     
 
-                   
-
-
-
                     <div style="display: flex; align-items: center;justify-content: center;">
                         <div style="min-width: 600px;">
 
-                            <div id="practice-question-info-div" class="info-div-1"></div>
+                            <div id="practice-question-info-div" class="info-div"></div>
 
                             <div class="sloka_container_1">
                                 <div class="q-c-1">
@@ -136,13 +139,10 @@
                                 </div>
                             </div>
                             <div id="practice-options-div" class="options-div-1"></div>
-
                         </div>
 
     
                     </div>
-
-
 
                 
                     <div id="practice-settings-div" class="container test-settings">
@@ -167,24 +167,24 @@
                 </div>
             
 
-                    <div class="card-footer-1">
+                <div class="card-footer-1">
 
-                            <button href="#" id="start-btn" class="btn btn-sm  ms-2 round text-white" >Start</button>                     
-                            
-                            <div class="btn-group" role="group" class="ms-2 text-white">
-                                <button id="previous-btn" class="btn btn-sm text-white" >&#x25C4;</button>
-                                <select id="select-item-btn" class="btn btn-sm text-white">
-                                </select>
-                                <button id="next-btn" class="btn btn-sm text-white">&#x25BA;</button>
-                            </div>
-
-                            <button href="#" id="review-btn" class="btn btn-sm  ms-2 round text-white">Review</button> 
-                            <button id="show-answer-btn" class="btn btn-sm ms-2 round text-white">Show Answer</button>
-                            <button id="correct-btn" class="btn btn-sm ms-2 round text-white">Correct</button>
-                            <button id="incorrect-btn" class="btn btn-sm  ms-2 round text-white">Incorrect</button>
-                            <button id="submit-response-btn" class="btn btn-sm ms-2 round text-white">Submit Test</button>
-
+                    <button href="#" id="start-btn" class="btn btn-sm  ms-2 round text-white" >Start</button>                     
+                    
+                    <div class="btn-group" role="group" class="ms-2 text-white">
+                        <button id="previous-btn" class="btn btn-sm text-white" >&#x25C4;</button>
+                        <select id="select-item-btn" class="btn btn-sm text-white">
+                        </select>
+                        <button id="next-btn" class="btn btn-sm text-white">&#x25BA;</button>
                     </div>
+
+                    <button href="#" id="review-btn" class="btn btn-sm  ms-2 round text-white">Review</button> 
+                    <button id="show-answer-btn" class="btn btn-sm ms-2 round text-white">Show Answer</button>
+                    <button id="correct-btn" class="btn btn-sm ms-2 round text-white">Correct</button>
+                    <button id="incorrect-btn" class="btn btn-sm  ms-2 round text-white">Incorrect</button>
+                    <button id="submit-response-btn" class="btn btn-sm ms-2 round text-white">Submit Test</button>
+
+            </div>
                 </div>
             </div>
             </div>
@@ -205,6 +205,19 @@
             }
             let ads = new ApplicationSetup(cfg);
             ads.home();
+        </script>
+        <script>
+            const mainNavigation = document.querySelector(".main-navigation");
+            const overlay = mainNavigation.querySelector(".overlay");
+            const toggler = mainNavigation.querySelector(".navbar-toggler");
+
+            const openSideNav = () => mainNavigation.classList.add("active");
+            const closeSideNav = () => mainNavigation.classList.remove("active");
+
+            document.addEventListener("swiped-right", openSideNav);
+            document.addEventListener("swiped-left", closeSideNav);
+            toggler.addEventListener("click", openSideNav);
+            overlay.addEventListener("click", closeSideNav);
         </script>
     </body>
 </html>

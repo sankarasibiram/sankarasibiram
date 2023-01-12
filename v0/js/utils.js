@@ -62,6 +62,7 @@ class Lipi {
 		try{
 			let newlipi = Lipi._get_current_lipi();
 			Lipi.changeDisplayLipi(newlipi);
+			Lipi.changeDisplayIAST()
 			//alert( 'Changing lipi to ' + newlipi);
 		} catch (err) {
 			console.log("Could not change lipi " + err.message);
@@ -72,11 +73,41 @@ class Lipi {
 	static changeDisplayLipi(new_lipi) {
 		let all_elements = [];
 		let eles = document.getElementsByClassName("multi-lipi");
-		for (let x=0; x<eles.length; x++) all_elements.push(eles[x]);
+		let eleids = [];
+		for (let x=0; x<eles.length; x++) {
+			all_elements.push(eles[x]);
+			eleids.push(eles[x].id)
+		}
+		console.log("Lipi will be checked on elements - " + eleids);
 
 		for (let x=0; x<all_elements.length; x++) {
 			let element = all_elements[x];
 			Lipi.displayMultiLipiText(element, new_lipi);
+		}
+		
+
+	}
+
+	static changeDisplayIAST() {
+		let all_elements = [];
+		let eles = document.getElementsByClassName("to-iast");
+		let eleids = [];
+		for (let x=0; x<eles.length; x++) {
+			all_elements.push(eles[x]);
+			eleids.push(eles[x].id)
+		}
+		console.log("Lipi will be checked display to IAST on elements - " + eleids);
+
+		for (let x=0; x<all_elements.length; x++) {
+			let ele = all_elements[x];
+			//Lipi.displayMultiLipiText(element, "iast");
+			let orig_lipi = "devanagari";	
+			let orig_text = ele.getAttribute("data-text");
+			
+			
+			if (!orig_text) {orig_text = ele.innerText;	ele.setAttribute("data-text", orig_text);}
+			ele.innerText = Sanscript.t(orig_text, orig_lipi,"iast");
+			ele.setAttribute("title", orig_text);
 		}
 		
 	}
@@ -104,7 +135,7 @@ class Lipi {
 			ele.setAttribute("data-display-lipi", new_lipi);
 			if(! ((orig_lipi) && (orig_text)) ) {
 				orig_lipi = "devanagari";
-				orig_text = ele.innerText
+				orig_text = ele.innerText;
 				ele.setAttribute("data-lipi", orig_lipi);
 				ele.setAttribute("data-text", orig_text);
 
@@ -193,13 +224,14 @@ function responseForGET(url) {
 	try	{
 		http.send("null");
 	} catch (error) {
-		alert('Alert: ' + error);
-		return;
+		console.log('Alert: ' + error);
+		return "Page could not be fetched";
+		
 	}
 
 	if (http.status >399) {
-		alert("Error occured. Status: " + http.status);
-		return;
+		console.log("Error occured. Status: " + http.status);
+		return "Page load failed with status " + http.status;
 	}
 	//alert(http.responseText);
 	return http.responseText;
@@ -291,19 +323,6 @@ function getXMLResponse(url) {
 	return (getXMLObject(responseForGET(url)));
 }
 
-function includeHTML(div_id, url) {
-	let d = document.getElementById(div_id);
-	//alert(d)
-	//d.removeAttribute("w3-include-html");
-	if (d == null) {
-		console.log("Attempting to set " + url + " to " + div_id + " failed as div was not found." );
-		return;
-	}
-	let txt = responseForGET(url);
-	if(txt) d.innerHTML = txt;
-	else d.innerHTML = "Page not found."
-}
-
 function includeHTML1() {
 	let z, i, elmnt, file, xhttp;
 	/* Loop through a collection of all HTML elements: */
@@ -332,6 +351,21 @@ function includeHTML1() {
 	}
 }
 
+function includeHTML(div_id, url) {
+	let d = document.getElementById(div_id);
+	//alert(d)
+	//d.removeAttribute("w3-include-html");
+	if (d == null) {
+		console.log("Attempting to set " + url + " to " + div_id + " failed as div was not found." );
+		return;
+	}
+	
+	let txt = responseForGET(url);
+	if(txt) d.innerHTML = txt;
+	else d.innerHTML = "Page not found."
+
+
+}
 
 class Timer {
 

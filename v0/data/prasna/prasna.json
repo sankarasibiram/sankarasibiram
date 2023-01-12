@@ -9,10 +9,7 @@
     "slokas": {
       "prefix": "pr_sloka_",
       "availability": false,
-      "list": [
-        24,
-        25
-      ]
+      "list": []
     },
     "slokas_with_student": {
       "prefix": "pr_sloka_repeat_",
