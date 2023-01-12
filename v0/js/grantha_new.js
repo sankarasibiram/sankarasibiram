@@ -1879,12 +1879,14 @@ class GranthaDisplay extends BaseDisplay {
                 that.show_new_item("next");
             }            
         }
+        
 
         let s1Ele = null; // for sloka
         let s2Ele = null; // for with student
 
         if (s1) {          
-            s1Ele = document.createElement("Audio");  
+            s1Ele = document.createElement("Audio"); 
+            s1Ele.id = "sloka_audio_element"; 
             s1Ele.preload = "none";
             s1Ele.controls = true;
             s1Ele.setAttribute("src", s1);            
@@ -1899,6 +1901,7 @@ class GranthaDisplay extends BaseDisplay {
 
         if (s2) {            
             s2Ele = document.createElement("Audio");
+            s2Ele.id = "sloka_with_student_audio_element";
             s2Ele.preload = "none";
             s2Ele.controls = true;
             s2Ele.setAttribute("src", s2);            
@@ -1933,6 +1936,29 @@ class GranthaDisplay extends BaseDisplay {
                 } 
             } 
         }
+
+        let autoplayOncheck = function() {
+            let e1 = document.getElementById("sloka_audio_element"); 
+            let e2 = document.getElementById("sloka_with_student_audio_element");
+            let autoply_chkbox =  document.getElementById("select-autoplay-chkbox");
+            let checked = false;
+            if(autoply_chkbox) checked = autoply_chkbox.checked;
+            if (! checked) return;
+
+            let isAudioPlaying = false;
+            if (e1) {
+                if (!e1.paused && !e1.ended && 0 < e1.currentTime) isAudioPlaying = true;
+            }
+            if (e2) {
+                if (!e2.paused && !e2.ended && 0 < e2.currentTime) isAudioPlaying = true;
+            }
+
+            if (! isAudioPlaying) that.setSlokaToLearnAudio(_sloka);
+            //else alert ("Sloka audio is already playing: " + isAudioPlaying );
+        }
+
+        if(autoEle) autoEle.onclick = autoplayOncheck;
+
         chkbox.onclick = function() {that.setSlokaToLearnAudio(_sloka);}
     }
 
