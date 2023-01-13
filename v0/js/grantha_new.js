@@ -942,6 +942,8 @@ class PracticeTestDisplay extends BaseDisplay {
         if (val == "next") that.set_data_item("displayed-question-index", (cur_index+1) );
         else if (val == "previous") that.set_data_item("displayed-question-index", (cur_index - 1) );
         else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
+        else if (val == "start") that.set_data_item("displayed-question-index", 0 );
+
         if(sele_el) sele_el.selectedIndex = this.get_data_item("displayed-question-index");
 
         that.show_item();
@@ -1193,10 +1195,10 @@ class PracticeTestDisplay extends BaseDisplay {
         //alert("review")
         let newstate = "on-practice-test-review";
         if ( this.get_config_item("test_type") == "multiple-choice") newstate = "on-practice-multiple-choice-test-review";
-        this.set_data_item("displayed-question-index", 0);
+        //this.set_data_item("displayed-question-index", 0);
         this.set_config_item("display_state", "review");
         this.set_state(newstate);
-        this.show_item();
+        this.show_new_item("start");
 
     }
 
