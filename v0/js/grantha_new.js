@@ -1908,6 +1908,7 @@ class GranthaDisplay extends BaseDisplay {
         sloka_stud_span.innerHTML = "";
 
 
+        // autoplayFunction to be added to the audio element and should be run when the current audio ends.
         let autoplayFunction = function() {
             let autoplayElement = document.getElementById("select-autoplay-chkbox");
             if (autoplayElement == null) return;
@@ -1973,6 +1974,7 @@ class GranthaDisplay extends BaseDisplay {
             } 
         }
 
+        // This function is attached to the autoplay checkbox. This will start the audio if it is not already running.
         let autoplayOncheck = function() {
             let e1 = document.getElementById("sloka_audio_element"); 
             let e2 = document.getElementById("sloka_with_student_audio_element");
@@ -2025,10 +2027,16 @@ class GranthaDisplay extends BaseDisplay {
         let that = this;
         let cur_index = this.get_data_item("displayed-question-index");
         let sele_el = this._get_element("select-item-button");
+        let item_list = this.get_data_item("item_list");
 
-        if (val == "next") that.set_data_item("displayed-question-index", (cur_index+1) );
+        if (val == "next") {
+            if (cur_index == (item_list.length - 1) ) return;
+            that.set_data_item("displayed-question-index", (cur_index+1) );
+        } 
         else if (val == "previous") that.set_data_item("displayed-question-index", (cur_index - 1) );
         else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
+        else if (val == "start") that.set_data_item("displayed-question-index", 0 );
+
         if(sele_el) sele_el.selectedIndex = this.get_data_item("displayed-question-index");
 
         that.show_item();
