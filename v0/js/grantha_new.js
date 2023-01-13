@@ -648,7 +648,7 @@ class PracticeTestMultipleChoice extends PracticeTest {
             question["answers_given"] = answers_given;
 
             
-            if (answers_given.length == 0) state = "Unanswered";
+            
 
 
             for(let y=0; y<answers_given.length; y++) {
@@ -665,10 +665,12 @@ class PracticeTestMultipleChoice extends PracticeTest {
                     if (answers_given.includes(this_option)) {state = "Incorrect"; this_state = "Incorrect"}
                 }
                 //alert("661: " + this_state + " Testing " + this_option + " against " + options);
-            }            
+            } 
 
+            if (answers_given.length == 0) state = "Unanswered";
             question["state"] = state;
             question["marked-options"] = marked_options;
+            //alert("672: " + JSON.stringify(question));
 
         }
         //alert("483: " + question_arr.length);
@@ -1002,10 +1004,23 @@ class PracticeTestDisplay extends BaseDisplay {
             let divele = document.createElement("div");
             divele.classList.add("option-div");
             root.appendChild(divele);
+            /*
+            divele.onclick = function() {
+                let inputs = this.children;
+                for (let d=0; d<inputs.length; d++) {
+                    if(inputs[d].name == "multi-answer") {
+                        let mychkbox = inputs[d];
+                        if(mychkbox.checked) mychkbox.checked = false;
+                        else mychkbox.checked = true;
+                        that.mark_answer();
+                    }
+                }
+            }
+            */
+
             let option_type = myq["options_type"];
             if(option_type == null) option_type = "radio";
             let chkboxid = "multi-answer-" + x;
-
             let e = document.createElement("input");
             e.setAttribute("name", "multi-answer");
             e.setAttribute("type", option_type);
@@ -1017,17 +1032,19 @@ class PracticeTestDisplay extends BaseDisplay {
             divele.appendChild(e);
             if (marked_options.includes(x)) e.checked = true;
             let that = this;
+
             e.onclick = function() {that.mark_answer();}
 
             let s = document.createElement("label");
-            s.setAttribute("style", "padding-left: 1rem;");
-            s.setAttribute("for",chkboxid);          
+            s.setAttribute("style", "padding-left: 15px;"); 
+            s.setAttribute("for",chkboxid);        
             divele.appendChild(s);
             lipiText(s, mytext);
 
             if (display_state == "review") {
                 e.disabled = true;
                 let symb = document.createElement("span");
+                
                 symb.style = "margin-left: 15px;"
                 if(myq["correct_answer"].includes(mytext))  symb.innerHTML = correct_symbol;
                 else if (e.checked) symb.innerHTML = incorrect_symbol;
@@ -1067,6 +1084,7 @@ class PracticeTestDisplay extends BaseDisplay {
     set_review_info(info_div_id) {
 
         let questions = this.get_data_item("questions");
+
         let cur_index = this.get_data_item("displayed-question-index"); 
         let correct_answers = 0;
         let incorrect_answers = 0;
@@ -1074,7 +1092,7 @@ class PracticeTestDisplay extends BaseDisplay {
         let unanswered_answers = 0;
 
         let cur_question_state = "Unknown";
-        let symbols = {"Correct": "&#x2705;", "Incorrect": "&#x274C;", "Skipped": "Skipped", "Unanswered":"Unanswered"};
+        let symbols = {"Correct": "&#x2705;", "Incorrect": "&#x274C;", "Skipped": "Skipped", "Unanswered":"&#x1F914;"};
         let info = "";
 
         for (let x=0; x<questions.length; x++) {
@@ -1093,13 +1111,14 @@ class PracticeTestDisplay extends BaseDisplay {
         let symbol_to_include = symbols[cur_question_state];
         if (symbol_to_include == null) symbol_to_include = cur_question_state;
 
-        info = "<b>" + symbols[cur_question_state] + "</b> Question " + (cur_index + 1) + " of " + questions.length + ". ";
-        info += "(Answered Correct: " + correct_answers + " Incorrect: " + incorrect_answers;
-        info += " Unanswered: " + unanswered_answers + ")";
+        info = "<b>" + symbols[cur_question_state] + "</b> प्रश्नक्रमः " + (cur_index + 1) + " [प्रश्नाः " + questions.length + "] ";
+        info += "(उत्तराणि साधु: " + correct_answers + " असाधु: " + incorrect_answers;
+        info += " न सूचितम्: " + unanswered_answers + ")";
 
         //let info_div = this._get_element("info-div");
         let info_div = this._get_element(info_div_id);
-        info_div.innerHTML = info;                 
+        lipiText(info_div,info);
+        //info_div.classList.add("multi-lipi");              
     }
 
     set_test_info(info_div_id) {
@@ -1195,9 +1214,12 @@ class PracticeTestDisplay extends BaseDisplay {
     timeExpired() {
        alert('Time expired. Submit test');
        let eles = document.getElementsByName("multi-answer");
-       this._get_element("next-button").disabled = true;
-       this._get_element("previous-button").disabled = true;
-       this._get_element("select-item-button").disabled = true;
+       setVisibilityState(
+        [
+            this._get_element("next-button"), this._get_element("previous-button"),this._get_element("select-item-button")
+        ], false
+       );
+
        eles.forEach(e => e.disabled = true);
        this._get_element("submit-button").disabled = false;
        this._get_element("submit-button").style.display = ""; 
@@ -1339,7 +1361,7 @@ class PracticeTestOralDisplay extends PracticeTestDisplay {
         if ( Object.keys(myq).includes("question_audio") ) {
             let s1 = myq["question_audio"];
             let s1Ele = q_audio_ele;
-            s1Ele.preload = ""; 
+            s1Ele.preload = "";
             if(! previously_shown) s1Ele.autoplay = true;
             s1Ele.controls = true;
             s1Ele.setAttribute("src", s1);
@@ -1364,6 +1386,7 @@ class PracticeTestOralDisplay extends PracticeTestDisplay {
         }
 
         if (this.get_config_item("display_state") == "review") {
+            if(q_audio_ele) q_audio_ele.autoplay = false;
             setVisibilityState([answerDiv,a_audio_div], true);
             setVisibilityState([this._get_element("correct-button"), this._get_element("incorrect-button")], false)
         } 
@@ -1446,11 +1469,19 @@ class PracticeTestOralDisplay extends PracticeTestDisplay {
     timeExpired() {
         alert('Time expired. Submit test');
         let eles = document.getElementsByName("multi-answer");
+        setVisibilityState(
+            [
+                this._get_element("next-button"), this._get_element("previous-button"),this._get_element("select-item-button"),
+                this._get_element("correct-button"), this._get_element("incorrect-button"),this._get_element("show-answer-button")
+            ], false
+        );
+        /*
         this._get_element("next-button").disabled = true;
         this._get_element("previous-button").disabled = true;
         this._get_element("select-item-button").disabled = true;
         this._get_element("correct-button").disabled = true;
         this._get_element("incorrect-button").disabled = true;
+        */
         eles.forEach(e => e.disabled = true);
         this._get_element("submit-button").disabled = false;
         this._get_element("submit-button").style.display = ""; 
@@ -1636,7 +1667,7 @@ class ApplicationSetup extends BaseDisplay {
         let staticdiv = this.get_config_item("static_page_div");
         //if(staticdiv != mydiv) staticdiv.innerHTML = "";
         document.getElementById(mydiv).style.display = "";
-        Lipi.change_lipi();
+        Lipi.change_lipi()
     }
 
     home() {
@@ -1707,7 +1738,7 @@ class GranthaDisplay extends BaseDisplay {
     enable_grantha_display() {
         app_display.show_card("grantha-card");
         let titlediv = document.getElementById("grantha-title");
-        if(titlediv) lipiText( titlediv, this.get_data_item("grantha.data.grantha.grantha"));
+        if(titlediv) titlediv.innerHTML = this.get_data_item("grantha.data.grantha.grantha");
     }
 
     learnSlokas() {
@@ -1992,21 +2023,13 @@ class GranthaDisplay extends BaseDisplay {
         let that = this;
         let cur_index = this.get_data_item("displayed-question-index");
         let sele_el = this._get_element("select-item-button");
-        let item_list = this.get_data_item("item_list");
 
-        let show_new_item = true;
-
-        if (val == "next") {
-            if (cur_index == (item_list.length - 1) ) show_new_item = false;
-            else that.set_data_item("displayed-question-index", (cur_index+1) );
-        } else if (val == "previous") {
-            if (cur_index == 0) show_new_item = false;
-            else that.set_data_item("displayed-question-index", (cur_index - 1) );
-        } else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
-        
+        if (val == "next") that.set_data_item("displayed-question-index", (cur_index+1) );
+        else if (val == "previous") that.set_data_item("displayed-question-index", (cur_index - 1) );
+        else if (val == "select") that.set_data_item("displayed-question-index", sele_el.selectedIndex );
         if(sele_el) sele_el.selectedIndex = this.get_data_item("displayed-question-index");
 
-        if(show_new_item) that.show_item();
+        that.show_item();
     }
 
     show_item() {

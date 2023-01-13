@@ -106,7 +106,7 @@ class Lipi {
 			
 			
 			if (!orig_text) {orig_text = ele.innerText;	ele.setAttribute("data-text", orig_text);}
-			ele.innerText = Sanscript.t(orig_text, orig_lipi,"iast");
+			ele.innerHTML = Sanscript.t(orig_text, orig_lipi,"iast");
 			ele.setAttribute("title", orig_text);
 		}
 		
@@ -141,7 +141,7 @@ class Lipi {
 
 			}
 			//throw ("lipi or text not set");
-			ele.innerText = Sanscript.t(orig_text, orig_lipi, new_lipi);
+			ele.innerHTML = Sanscript.t(orig_text, orig_lipi, new_lipi);
 		} catch (err) {
 			//console.log("displayMultiLangText: Error in setting text value of " + element + " in " + new_lipi);
 			console.log("displayMultiLangText: Error in changing text value to show in " + new_lipi);
