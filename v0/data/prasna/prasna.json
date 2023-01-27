@@ -52,7 +52,8 @@
       "type": "oral",
       "source": "auto-generated",
       "max_questions": 20,
-      "max_time": 5
+      "max_time": 5,
+      "difficulty_levels": ["Easy"]
     },
     {
       "name": "यन्त्रनिर्देशितविकल्पिकात्मिकप्रश्नाः",
@@ -67,7 +68,8 @@
       "source": "test-file",
       "file_location": "data/prasna/prasna_test_1.json",
       "max_questions": 3,
-      "max_time": 2
+      "max_time": 2,
+      "difficulty_levels": ["Easy", "Moderate", "Difficult"]
     }
   ],
   "prasna_uttaras_only_file": "data/prasna/prasna_q_a.json",

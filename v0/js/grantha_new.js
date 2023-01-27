@@ -1791,6 +1791,23 @@ class GranthaDisplay extends BaseDisplay {
             document.getElementById("practice-max-time").max = test_obj.max_time * 60;
             document.getElementById("practice-max-time").value = test_obj.max_time * 60;
         }
+
+        let levels = []
+        if (Object.keys(test_obj).includes("difficulty_levels")) {
+            //alert(JSON.stringify(test_obj));
+            levels = test_obj.difficulty_levels; //.split(",");
+        } else {
+            levels.push("Easy");
+        }
+
+        let selele = document.getElementById("practice-difficulty-level");
+        selele.innerHTML = "";
+        for (let a=0; a<levels.length; a++) {
+            let opt = document.createElement("option");
+            opt.value = levels[a];
+            opt.innerHTML = levels[a];
+            selele.appendChild(opt);
+        }
         
         let func_time = function() {
             let val = parseInt(document.getElementById("practice-max-time").value);
