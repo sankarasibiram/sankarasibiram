@@ -359,8 +359,8 @@ class PracticeTest extends Base{
         //alert("306: test_type: " + test_type + ": test_source: "+questions_type+":"+file_location+ (test_type =="multiple-choice" ));
         let test_to_use = null;
 
-        if (test_type == "multiple-choice") test_to_use = new PracticeTestMultipleChoice();
-        else if (test_type == "oral") test_to_use = new PracticeTestOral();
+        if (test_type == "multiple-choice") { test_to_use = new PracticeTestMultipleChoice();}
+        else if (test_type == "oral") { test_to_use = new PracticeTestOral();}
         
         if (test_source == "auto-generated") test_to_use.set_questions_from_grantha(grantha, test_type);
         else if (test_source == "test-file") test_to_use.set_questions_from_file(file_location);
