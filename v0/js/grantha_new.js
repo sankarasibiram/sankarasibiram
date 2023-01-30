@@ -1740,7 +1740,7 @@ class GranthaDisplay extends BaseDisplay {
     enable_grantha_display() {
         app_display.show_card("grantha-card");
         let titlediv = document.getElementById("grantha-title");
-        if(titlediv) titlediv.innerHTML = this.get_data_item("grantha.data.grantha.grantha");
+        if(titlediv) lipiText(titlediv, this.get_data_item("grantha.data.grantha.grantha"));
     }
 
     learnSlokas() {
