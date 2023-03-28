@@ -16,6 +16,7 @@
         ],
 
         "display-divs":[
+            {"name":"grantha-text-container-div", "id": "grantha-text-container-div"},
             {"name":"sloka_container-div", "id": "sloka_container-div"},
             {"name":"learn-sloka-div", "id": "learn-sloka-div"},
             {"name":"learn-sloka-anvaya-div", "id": "learn-sloka-anvaya-div"},
@@ -116,7 +117,13 @@
                 "displayed-divs": ["question-div","info-div", "question-audio-div", "answer-div", "answer-audio-div" ],
                 "enable_elements": ["select-item-button","next-button","previous-button"],
                 "disable_elements": []
-            }            
+            },
+            {
+                "state": "show-grantha-text", "displayed-buttons":[],
+                "displayed-divs": ["grantha-text-container-div"],
+                "enable_elements": [],
+                "disable_elements": []
+            }           
         ]
     }  
 }

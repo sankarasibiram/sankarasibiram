@@ -78,6 +78,22 @@
                     
                     <div style="display: flex; align-items: center;justify-content: center;">
                         <div sstyle="min-width:600px; max-width: 80vw;">
+                            <div id="grantha-text-container-div">
+                                <div style="font-size: 1rem; text-align: left; margin-top: 1rem" class="grantha-text-options-div">
+                                    <input id="grantha-text-anvaya-chkbox" style="font-size: 1rem;"  type="checkbox" value=""> 
+                                    <label id="grantha-text-include-anvayam-label" class="multi-lipi" class="me-2"> सान्वयम् </label>
+
+                                    <input id="grantha-text-meaning-chkbox" class="lipi-text" type="checkbox" value="">                     
+                                    <label id="grantha-text-include-meaning-label" class="me-1 multi-lipi"> सार्थम् </label> 
+                                    <select id="grantha-text-meaning-lang" class="nav-item dropdown sloka-meaning-select me-2 lipi-text border-0"></select>
+                                    <button id="print-grantha-btn" class="btn btn-sm ms-2">Print</button>
+                                </div>
+
+                                <div id="grantha-text-content" class="grantha_text_container">
+                                </div>
+
+                            </div>
+                            
                             <div id="sloka_container-div" class="sloka_container sloka_container_1">
                                 <div class="container sloka-div-1">
 
@@ -175,10 +191,10 @@
                     <button href="#" id="start-btn" class="btn btn-sm  ms-2 round text-white" >Start</button>                     
                     
                     <div class="btn-group" role="group" class="ms-2 text-white">
-                        <button id="previous-btn" class="btn btn-sm text-white" >&#x25C4;</button>
-                        <select id="select-item-btn" style="background-color: parent;" class="btn btn-sm text-red">
+                        <button id="previous-btn" class="btn btn-sm nav-item dropdown navbar_background" >&#x25C4;</button>
+                        <select id="select-item-btn" class="btn btn-sm nav-item dropdown navbar_background">
                         </select>
-                        <button id="next-btn" class="btn btn-sm text-white">&#x25BA;</button>
+                        <button id="next-btn" class="btn btn-sm nav-item dropdown navbar_background">&#x25BA;</button>
                     </div>
 
                     <button href="#" id="review-btn" class="btn btn-sm  ms-2 round text-white">Review</button> 

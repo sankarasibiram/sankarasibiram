@@ -1710,6 +1710,14 @@ class GranthaDisplay extends BaseDisplay {
 
         try {
             let that = this;
+
+            // Add Grantha test menu item
+            let grantha_option_text = "ग्रन्थः";
+            let grantha_option_anchor_id = "grantha_text_anchor";
+            let grantha_func = function() {that.htmlForGrantha();}
+
+            app_display.addNavbarMenu("learn", grantha_option_anchor_id, grantha_option_text, grantha_func);
+
             // Add learn slokas menu item.
             let text = "श्लोकाः";
             let anchor_id = "learn_slokas_anchor"
@@ -2167,6 +2175,181 @@ class GranthaDisplay extends BaseDisplay {
         }
         return tmpdiv;
     } 
+
+    htmlForGranthaOptions() {
+        let that = this;
+
+        let anvayaChkbox = document.getElementById("grantha-text-anvaya-chkbox");
+        if(anvayaChkbox) anvayaChkbox.onchange = function(){that.showFullGrantha();}
+
+        let meanings = this.get_grantha().getGranthaMeaningsConfig();
+        
+        let chkbox = this._get_element("grantha-text-meaning-chkbox");
+        let sEle = this._get_element("grantha-text-meaning-lang");
+        sEle.onchange = function(){that.showFullGrantha();}
+        let curval = sEle.selected;
+
+        sEle.innerHTML = "";
+
+        //if (! chkbox.checked) {sEle.style.display = "none"; return;} // No need to display languages if checkbox is off.
+        // Where there is no meaning available
+        
+        if ((meanings == null) || (meanings.length == 0)) {
+            chkbox.checked = false;
+            chkbox.disabled = true;
+            sEle.style.display = "none";
+        } else {
+            for (let i=0; i<meanings.length; i++) {
+                let d = document.createElement("Option");
+                d.value = meanings[i].lang;
+                d.text = meanings[i].display;
+                if (d.value == curval) d.selected = true;
+                sEle.appendChild(d);
+            }            
+            chkbox.disabled = false;
+            sEle.style.display = "";           
+        }
+
+        chkbox.onchange = function() {
+            if (chkbox.checked) sEle.style.display = ""; 
+            else sEle.style.display = "none";
+            that.showFullGrantha();
+        }
+
+        if (chkbox.checked) sEle.style.display = ""; 
+        else sEle.style.display = "none";
+    
+        let btn = document.getElementById("print-grantha-btn");
+        if(btn) {
+            btn.onclick = function() {printDiv("grantha-text-content");}
+        }
+    
+    }
+        
+    htmlForSloka_ForGrantha(_sloka) {
+
+        //let _sloka = this.grantha.getSloka(sloka_id);
+        let lines = _sloka.sloka;
+        let tmpSlokaDiv = document.createElement("DIV");
+        //tmpSlokaDiv.classList.add("SlokaTextDiv");
+
+        let text = "";
+            
+        lines.forEach((myline, line_index, line_array) => {
+            let _line_parts = myline.line_parts;
+            //let last_class_type = "SlokaText";
+            let last_class_type = "mx-2 px-2";
+            _line_parts.forEach(lpart => {
+
+                let textEl = document.createElement("span");
+                //textEl.innerText = LipiText.text(lpart.text) + " ";
+                //lipiText(textEl, (lpart.text + " "));
+                lipiText(textEl, (lpart.text + " "));
+
+                if (lpart.type == "text") {
+                    textEl.classList.add("grantha_text_sloka");
+                    last_class_type = "SlokaText";
+                } else if (lpart.type == "prasna") {
+                    textEl.classList.add("grantha_text_prasna");
+                    last_class_type = "grantha_text_prasna";
+                } else if (lpart.type == "utharam") {
+                        textEl.classList.add("grantha_text_utharam");
+                    last_class_type = "grantha_text_utharam";
+                }
+
+                tmpSlokaDiv.appendChild(textEl);
+                
+            });
+
+            tmpSlokaDiv.appendChild(document.createElement("br"));
+        });
+        return tmpSlokaDiv;
+
+    }    
+
+    htmlForGrantha() {
+        let that = this;
+        this.set_state("show-grantha-text");
+        app_display.show_card("grantha-card");
+        this.htmlForGranthaOptions();
+        this.showFullGrantha();  
+    }
+
+    showFullGrantha() {
+        
+        let include_anvaya = false;
+        let anvayaChkbox = document.getElementById("grantha-text-anvaya-chkbox");
+        if(anvayaChkbox && anvayaChkbox.checked) include_anvaya = true;
+        
+        let include_meaning = false;
+        let meaningChkbox = document.getElementById("grantha-text-meaning-chkbox");
+        if(meaningChkbox && meaningChkbox.checked) include_meaning = true;
+
+        let meanings_lang = "Telugu";
+
+        let item_list = this.get_grantha().getSlokaNumbers();
+        let tbl = document.createElement("TABLE")
+
+        for(let i=0; i<item_list.length; i++) {
+            let tblRow = document.createElement("TR");
+            tbl.appendChild(tblRow);
+
+            let numCol = document.createElement("TD");
+            let contentCol = document.createElement("TD");
+            tblRow.appendChild(numCol);
+            tblRow.appendChild(contentCol);
+            let numspan = document.createElement("SPAN");
+            numspan.innerText = (i+1) + "."
+            numCol.appendChild(numspan);
+            numCol.setAttribute("style", "vertical-align: top; padding-top: 0.2rem");
+            contentCol.setAttribute("style", "vertical-align: top;");
+
+            let _sloka = this.get_grantha().getSloka(item_list[i]);
+            let sloka_container = this.htmlForSloka_ForGrantha(_sloka)
+            let anvaya_container = document.createElement("DIV");
+            anvaya_container.appendChild(this.htmlForAnvaya(_sloka));
+
+            if(include_anvaya) {
+                anvaya_container.setAttribute("style", "padding-top: 1rem;");
+                sloka_container.appendChild(anvaya_container);
+            }
+
+            if(include_meaning) {
+
+                let meaningdiv = document.createElement("DIV");
+                meaningdiv.setAttribute("style", "padding-top: 1rem;");
+                meaningdiv.style.display = "";
+                meaningdiv.innerHTML = "";
+
+                let sEle = this._get_element("grantha-text-meaning-lang");
+                if (sEle) { 
+                    meanings_lang = sEle.value;
+                    let t = this.get_grantha().getMeaningForSloka(meanings_lang, item_list[i]);
+                    for (let x=0; x<t.length; x++) {
+                        let d = document.createElement("text");
+                        d.innerText = t[x];
+                        meaningdiv.appendChild(d);
+                        meaningdiv.appendChild(document.createElement("BR"));
+                    }
+
+                    sloka_container.appendChild(meaningdiv);
+                }
+            }
+            contentCol.appendChild(sloka_container);
+            contentCol.appendChild(document.createElement("P"));            
+        }
+
+        let ele = document.getElementById("grantha-text-content");        
+        ele.innerHTML = "";
+        let title_element = document.createElement("div");
+        title_element.classList.add("grantha_text_title");
+        lipiText(title_element, this.get_grantha().getGranthaName());
+
+
+        ele.appendChild(title_element);
+        ele.appendChild(tbl);
+        
+    }    
 }
 
 class PrasnottaraGranthaDisplay extends GranthaDisplay {

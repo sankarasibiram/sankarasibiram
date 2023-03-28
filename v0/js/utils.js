@@ -211,7 +211,20 @@ class Lipi {
 	}
 }
 
-
+function printDiv(div_id) {
+	let divContents = document.getElementById(div_id).innerHTML;
+	let hd = document.getElementsByTagName("HEAD")
+	
+	let a = window.open('', '', 'height=500, width=500');
+	a.document.write('<html>');
+	//a.document.write("<head><link rel=\"stylesheet\" href=\"css/ss2.css\"></head>")
+	if(hd) a.document.write("<head>" + hd[0].innerHTML + "</head>");
+	a.document.write('<body>');
+	a.document.write(divContents);
+	a.document.write('</body></html>');
+	a.document.close();
+	a.print();
+}
 
 
 function responseForGET(url) {
