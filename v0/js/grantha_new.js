@@ -2041,11 +2041,19 @@ class GranthaDisplay extends BaseDisplay {
         this.show_item();
 
         let that = this;
-        let chkbox = this._get_element("sloka-anvaya-chkbox");
-        chkbox.onchange = function(){that.setSlokaAnvaya()};
+        let anvaya_chkbox = this._get_element("sloka-anvaya-chkbox");
+        anvaya_chkbox.onchange = function(){that.setSlokaAnvaya()};
         //alert("1676: " + JSON.stringify(myg))
+        let meaning_chkbox = this._get_element("select-meaning-chkbox");
+        let audio_chkbox = this._get_element("sloka-audio-checkbox");
+        let audio_chkbox_1 = this._get_element("sloka-with-student-audio");
 
-       this.setMeaningOptions();
+        // All checkboxes unchecked when the grantha is opened.
+        [anvaya_chkbox,meaning_chkbox,audio_chkbox,audio_chkbox_1].forEach( function(e){
+            if(e) e.checked = false;
+        });
+
+        this.setMeaningOptions();
     }
 
     show_new_item(val) {
@@ -2299,6 +2307,8 @@ class GranthaDisplay extends BaseDisplay {
             tblRow.appendChild(numCol);
             tblRow.appendChild(contentCol);
             let numspan = document.createElement("SPAN");
+            numspan.classList.add('p-2');
+            numspan.classList.add('text-end');
             numspan.innerText = (i+1) + "."
             numCol.appendChild(numspan);
             numCol.setAttribute("style", "vertical-align: top; padding-top: 0.2rem");
