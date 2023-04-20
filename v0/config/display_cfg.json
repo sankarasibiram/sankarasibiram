@@ -47,7 +47,8 @@
             {"name": "sloka-audio-checkbox", "id":"sloka-audio-checkbox"},
             {"name": "sloka-audio", "id":"sloka-audio"},
             {"name": "sloka-with-student-audio", "id":"sloka-with-student-audio"},
-            {"name": "sloka_number_label", "id": "sloka_number_label"}
+            {"name": "sloka_number_label", "id": "sloka_number_label"}, 
+            {"name": "select-autoplay-chkbox", "id": "select-autoplay-chkbox"}
         ],
 
         "states": [

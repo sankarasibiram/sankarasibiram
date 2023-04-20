@@ -2047,9 +2047,10 @@ class GranthaDisplay extends BaseDisplay {
         let meaning_chkbox = this._get_element("select-meaning-chkbox");
         let audio_chkbox = this._get_element("sloka-audio-checkbox");
         let audio_chkbox_1 = this._get_element("sloka-with-student-audio");
+        let auto_play_chkbox = this._get_element("select-autoplay-chkbox");
 
         // All checkboxes unchecked when the grantha is opened.
-        [anvaya_chkbox,meaning_chkbox,audio_chkbox,audio_chkbox_1].forEach( function(e){
+        [anvaya_chkbox,meaning_chkbox,audio_chkbox,audio_chkbox_1, auto_play_chkbox].forEach( function(e){
             if(e) e.checked = false;
         });
 
