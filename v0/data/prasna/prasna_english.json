@@ -29,8 +29,26 @@
             "sloka_number": 4,
             "sloka": [
                 "6. What is most beneficial?  dharmaḥ.",
-                "7. Who is pure? One whose mind is clean."
+                "7. Who is pure? One whose mind is clean.",
+                "8. Who is a pandita?, One who is wise.",
+                "9. What is harmful like poison? Not abiding in guru's instructions."
             ]
-        }                       
+        },
+        {
+            "sloka_number": 5,
+            "sloka": [
+                "10. What is essence of samsara?  Thinking about this and understanding that it has no essence",
+                "11. What is the most desirable amongst desires in men? A life which is beneficial to self and others."
+            ]
+        },
+        {
+            "sloka_number": 6,
+            "sloka": [
+                "12. What is obsessive like alcohol? Attachment to children, etc.",
+                "13. Who are the real thieves? Objects of the senses.",
+                "14. What grows like a creeper? Extreme desire.",
+                "15. Who is the real enemy? Not making an effort, laziness."
+            ]
+        }                      
     ]
 }
