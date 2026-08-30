@@ -7,7 +7,9 @@
         {
             "sloka_number": 1,
             "sloka": [
-                "Who, indeed, that is highly capable in achieving seen and unseen goals, will not be adorned by this praśnottararatnamālikā when it is worn on the neck?"
+                "Who, indeed, that is highly capable in achieving seen and unseen goals, will not be adorned by this praśnottararatnamālikā when it is worn on the neck?",
+                "",
+                "Memorizing the Prashnottara Ratnamālika is like wearing an ornament made of precious gems around the neck. Teachings in it help a person achieve goals that are worldly (इह)  as well as those beyond this world. (पर)"
             ]
         },
         {
@@ -15,40 +17,102 @@
             "sloka": [
                 "1. Oh Divine One (Guru)! What must be accepted? Guru's instructions.",
                 "2. What must be rejected? Forbidden action; Action that should not be done",
-                "3. Who is a Guru? One who has realized the tattva, the everlasting and unchanging Truth,  Who is ever striving for the welfare of the śiṣya, disciple."
+                "3. Who is a Guru? One who has realized the tattva, the everlasting and unchanging Truth,  Who is ever striving for the welfare of the śiṣya, disciple.",
+                "",
+                "upādeyam (उपादेयम्) - That which is worthy of acceptance",
+                "heyam (हेयम्) - That which must be abandoned, rejected, or given up"
             ]
         },
         {
             "sloka_number": 3,
             "sloka": [
-                "4. What must be expedited by the wise? End the cycle of birth and death, saṃsāra",
-                "5. What is the seed for the tree called mokṣa (release from saṃsāra)? Knowledge obtained by performing ordained actions and duties."
+                "4. What must be done by the wise with utmost urgency? Severance of the cyclic chain of birth and death, saṃsāra",
+                "5. What is the seed for the tree of liberation, mokṣa (release from saṃsāra)? Knowledge obtained by performing ordained actions and duties.",
+                "",
+                "It is emphasized that mere theoritical or textbook knowledge is not enough. To bear fruit, tt must be practiced and lived through by performing ordained duties everyday."
             ]
         },
         {
             "sloka_number": 4,
             "sloka": [
                 "6. What is most beneficial?  dharmaḥ.",
-                "7. Who is pure? One whose mind is clean.",
-                "8. Who is a pandita?, One who is wise.",
-                "9. What is harmful like poison? Not abiding in Guru's instructions."
+                "7. Who is pure in this world? One whose mind is clean.",
+                "8. Who is a pandita (wise person)?, One who is discerning (discriminate between nitya and anitya).",
+                "9. What is harmful like poison? Disrespect toward Gurus.",
+                "",
+                "avadhīraṇā (अवधीरणा) - contempt, disrespect, disregard, treating with slight."
             ]
         },
         {
             "sloka_number": 5,
             "sloka": [
-                "10. What is the essence of samsara?  Thinking about this and realizing that it has no essence",
-                "11. What is the most desirable amongst desires in men? A life which is beneficial to self and others."
+                "10. What is the essence of samsara?  This alone must be reflected upon repeatedly. (and realize that there is no essence in samsara)",
+                "11. What is the most desirable amongst men? A life which is beneficial to self and others.",
+                "",
+                "iṣṭatamaṃ (इष्टतमम्)- Most desirable, most cherished"
             ]
         },
         {
             "sloka_number": 6,
             "sloka": [
-                "12. What is obsessive like alcohol? Attachment to children, etc.",
+                "12. What causes delusion like alcohol? Attachment such as to children, etc.",
                 "13. Who are the real thieves? Objects of the senses.",
                 "14. What grows like a creeper? Extreme desire.",
-                "15. Who is the real enemy? Not making an effort, laziness."
+                "15. Who is the real enemy? Lack of effort, laziness.",
+                "",
+                "dasyavaḥ (दस्यवः) - Thieves, robbers, plunderers",
+                "anudyogaḥ (अनुद्योगः) - lack of effort, laziness, indolence"
             ]
-        }                      
+        },
+        {
+            "sloka_number": 7,
+            "sloka": [
+                "16. What causes fear? Death.",
+                "17. Who is even blinder than a physically blind person? One with worldly passions and attachments.",
+                "18. Who is a true hero? One who is not disturbed by the piercing glances of women.",
+                "It implies a hero is one who has overcome sensory temptations."
+            ]
+        },
+       {
+            "sloka_number": 8,
+            "sloka": [
+                "19. What is the nectar that is fit to be drunk by the ears that are like cupped hands? Good advice.",
+                "20. What causes respectability? Not asking for anything, non-soliciting."
+            ]
+        },
+       {
+            "sloka_number": 9,
+            "sloka": [
+                "21. What is completely unfathomable? Conduct of women.",
+                "22. Who is truly clever? One who has not succumbed to the above.",
+                "23. What is true misery? Discontentment.",
+                "24. What causes a loss of dignity? Begging or soliciting from an ignoble person."
+            ]
+        },
+       {
+            "sloka_number": 10,
+            "sloka": [
+                "25. What is true living? A flawless life lived with purity and integrity.",
+                "26. What is stupidity? Not putting into practice what has been learnt.",
+                "27. Who is truly awake? One who is discerning; one who can distinguish between what is permanent and what is ephemeral.",
+                "28. What is real sleep? Ignorance (to the purpose of life) of living beings."
+            ]
+        },
+       {
+            "sloka_number": 11,
+            "sloka": [
+                "29. What is as fleeting like a water droplet on a lotus petal? Youth, wealth, and life itself.",
+                "30. Who are universally pleasant like the moonlight? Saints, noblemen, and gentlemen - those who are always pure, moral, and righteous in their conduct."
+            ]
+        },
+       {
+            "sloka_number": 12,
+            "sloka": [
+                "31. What is hell? Subjugation (dependence on others)",
+                "32. What is true happiness? Detachment from all worldly associations.",
+                "33. What is the ultimate goal to be achieved? Welfare of all living beings.",
+                "34. What is most dear to living beings? Life itself "
+            ]
+        }                                      
     ]
 }
