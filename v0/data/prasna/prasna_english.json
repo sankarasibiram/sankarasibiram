@@ -17,7 +17,7 @@
             "sloka": [
                 "1. Oh Divine One (Guru)! What must be accepted? Guru's instructions.",
                 "2. What must be rejected? Forbidden action; Action that should not be done",
-                "3. Who is a Guru? One who has realized the tattva, the everlasting and unchanging Truth,  Who is ever striving for the welfare of the śiṣya, disciple.",
+                "3. Who is a Guru? One who has realized the tattva, the everlasting and unchanging Truth;  Who is ever striving for the welfare of the śiṣya, disciple.",
                 "",
                 "upādeyam (उपादेयम्) - That which is worthy of acceptance",
                 "heyam (हेयम्) - That which must be abandoned, rejected, or given up"
@@ -35,9 +35,9 @@
         {
             "sloka_number": 4,
             "sloka": [
-                "6. What is most beneficial?  dharmaḥ.",
+                "6. What is most beneficial?  dharma.",
                 "7. Who is pure in this world? One whose mind is clean.",
-                "8. Who is a pandita (wise person)?, One who is discerning (discriminate between nitya and anitya).",
+                "8. Who is a pandita (wise person)? One who is discerning; One who discriminates between permanent (nitya), and ephemeral (anitya).",
                 "9. What is harmful like poison? Disrespect toward Gurus.",
                 "",
                 "avadhīraṇā (अवधीरणा) - contempt, disrespect, disregard, treating with slight."
@@ -55,7 +55,7 @@
         {
             "sloka_number": 6,
             "sloka": [
-                "12. What causes delusion like alcohol? Attachment such as to children, etc.",
+                "12. What causes delusion like alcohol? Attachment such as to wealth, children, etc.",
                 "13. Who are the real thieves? Objects of the senses.",
                 "14. What grows like a creeper? Extreme desire.",
                 "15. Who is the real enemy? Lack of effort, laziness.",
@@ -70,6 +70,7 @@
                 "16. What causes fear? Death.",
                 "17. Who is even blinder than a physically blind person? One with worldly passions and attachments.",
                 "18. Who is a true hero? One who is not disturbed by the piercing glances of women.",
+                "",
                 "It implies a hero is one who has overcome sensory temptations."
             ]
         },
@@ -113,6 +114,42 @@
                 "33. What is the ultimate goal to be achieved? Welfare of all living beings.",
                 "34. What is most dear to living beings? Life itself "
             ]
-        }                                      
+        },
+       {
+            "sloka_number": 13,
+            "sloka": [
+                "35. What results in ruin? Arrogance or Egoistic pride",
+                "36. What bestows happiness? Friendship with the virtuous.",
+                "37. Who is adept at destroying all calamities? A renunciate (One who has renounced everything)"
+            ]
+        },
+       {
+            "sloka_number": 14,
+            "sloka": [
+                "38. What is equivalent to death? Stupidity.",
+                "39. What is priceless? Timely help.",
+                "37. What hurts like a thorn until death? A misdeed committed in secrecy."
+            ]
+        },
+       {
+            "sloka_number": 15,
+            "sloka": [
+                "39. Where should one put his efforts? Acquiring knowledge, right medicine, and charity.",
+                "40. What should be held in contempt? Wicked people, other's women, and other's wealth."
+            ]
+        },
+       {
+            "sloka_number": 16,
+            "sloka": [
+                "41. What should be contemplated day and night? The lack of essence in worldly things, not an enchanting woman (implying not worldly pleasures).",
+                "42. What should be cherished (nurtured)? Compassion for the helpless and friendship with the righteous."
+            ]
+        },
+       {
+            "sloka_number": 17,
+            "sloka": [
+                "43. Whose mind can never be reformed, even on the brink of death? A fool, a suspicious person, a despondent person, and an ungrateful person."
+            ]
+        }                           
     ]
 }
